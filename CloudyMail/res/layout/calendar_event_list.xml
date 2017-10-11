@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" android:background="@color/white">
+<ListView android:id="@android:id/list"  
+          android:layout_width="fill_parent" 
+          android:layout_height="fill_parent"             
+          android:background="@color/white" 
+		  
+          android:divider="#c0c0c0"
+          android:dividerHeight="1dp"                         
+         />     
+  <!--     <TextView android:id="@android:id/empty" 
+         android:layout_centerInParent="true"              
+         android:layout_width="wrap_content"               
+         android:layout_height="wrap_content"  
+         android:textSize="25sp"             
+         android:textColor="#FF0000"               
+         android:text="@string/no_event"/>-->
+     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="50dp"
+		android:drawSelectorOnTop="false" 
+		android:fastScrollEnabled="true"
+		android:id="@+id/selectEventLayout"
+		android:layout_alignParentBottom="true"
+		android:visibility="gone"
+		>
+	
+		<Button android:id="@+id/delEventBtn" android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:layout_weight="1"
+			android:text="@string/delEventBtn" 
+			android:textColor="@color/white"
+			android:background="@drawable/menu_button_selector"
+
+			/>
+		<Button android:id="@+id/SendEventBtn" android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:layout_weight="1"
+			android:textColor="@color/white"
+			android:background="@drawable/menu_button_selector"
+			android:text="@string/sendEventBtn" />
+
+	</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:orientation="horizontal">
+	<ImageView android:id="@+id/attachIcon" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:src="@drawable/icon"
+		android:paddingLeft="5dp" />
+		
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" 
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:padding="10dp"
+	android:layout_weight="1">	
+	<TextView android:id="@+id/attachName" android:text=""
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_gravity="left"
+		android:singleLine="true"
+		android:textColor="@color/solid_blue"></TextView>
+		</LinearLayout>
+		
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="80sp" 
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:padding="10dp">
+	<TextView android:id="@+id/attachSize" android:text=""
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_gravity="right"
+		android:textColor="@color/solid_blue"></TextView>
+	</LinearLayout>
+	
+	
+<!-- 	<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:orientation="horizontal"
+		android:padding="10dp">
+	<TextView android:id="@+id/attachName" android:text=""
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_gravity="left"/>
+	<TextView android:id="@+id/attachSize" android:text=""
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_gravity="right"
+		android:layout_toLeftOf="@id/attachName"/> 
+	</RelativeLayout> -->
+	
+	
+	<!-- LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"
+  		android:orientation="horizontal"
+		android:padding="10dp">
+	<TextView android:id="@+id/attachSize" android:text=""
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:textColor="@color/solid_blue"
+		android:layout_gravity="right"/> 
+	<TextView android:id="@+id/attachName" android:text=""
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:singleLine="true"
+		android:layout_gravity="left"
+		android:textColor="@color/solid_blue"
+		android:layout_weight="1"/>
+	</LinearLayout-->
+</LinearLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/widget_background"
+        > 
+  
+<ScrollView android:id="@+id/cp_crollView" android:layout_width="fill_parent"
+ android:layout_height="fill_parent" android:scrollbars="vertical" 
+ android:scrollbarStyle="outsideInset" android:fillViewport="true"
+ android:layout_alignParentTop="true" android:layout_above="@+id/cp_bottomBar">
+ <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"	
+		android:layout_marginRight="2dip"
+		android:layout_marginLeft="2dip">
+		<TableRow>
+			<TextView android:text="@string/cp_addresser" android:gravity="center"
+			android:ellipsize="end" android:singleLine="true" 
+			android:textColor="@color/blue"
+			></TextView>
+			<Spinner android:id="@+id/addresserCmb" 
+			    android:background="@drawable/spinner_sytle_bg"
+			    android:textColor="@color/blue"
+			    android:layout_weight="1"
+			    android:paddingTop="2dip"
+			    
+			    />
+		</TableRow>
+	<TableRow>
+		<Button android:id="@+id/toBtn" android:text="@string/cp_to"
+		    android:background="@drawable/button_bg"
+		    android:textColor="@drawable/button_color"
+		    android:layout_marginTop="-2dip"
+		    android:layout_height="wrap_content"
+		    ></Button>
+		<!-- <EditText android:id="@+id/toEditText" android:inputType="textEmailAddress"></EditText> -->
+		<MultiAutoCompleteTextView 
+		    android:paddingTop="4dip"
+		    android:id="@+id/autoEditText"
+            android:maxHeight="10dip"
+            android:layout_marginTop="0dip"
+			android:inputType="textEmailAddress"
+			android:layout_weight="1"
+	      	android:ellipsize="end"
+			android:singleLine="true"
+			android:layout_height="45dip"
+			 >
+	<!-- 
+	 -->
+		</MultiAutoCompleteTextView>
+	</TableRow>
+		<TableRow>
+			<Button android:id="@+id/ccBtn" android:text="@string/cp_cc" 
+			android:background="@drawable/button_bg"
+		    android:textColor="@drawable/button_color"
+		    android:layout_marginTop="-2dip"
+		    android:layout_height="wrap_content"
+			android:visibility="visible"></Button>
+			<MultiAutoCompleteTextView 
+			    android:id="@+id/ccEditText" 
+			    android:inputType="textEmailAddress"
+			    android:visibility="visible" 
+			    android:layout_weight="1"
+			    android:paddingTop="4dip"
+			    android:layout_height="45dip"
+			    android:maxHeight="10dip"
+                android:layout_marginTop="0dip"
+			    ></MultiAutoCompleteTextView>
+		</TableRow>
+		<TableRow>
+			<Button android:id="@+id/bccBtn" android:text="@string/cp_bcc" 
+			android:background="@drawable/button_bg"
+		   android:textColor="@drawable/button_color"
+		     android:layout_marginTop="-2dip"
+		    android:layout_height="wrap_content"
+			android:visibility="visible"></Button>
+			<MultiAutoCompleteTextView 
+			android:id="@+id/bccEditText" android:inputType="textEmailAddress"
+			android:visibility="visible" android:layout_weight="1"
+			 android:paddingTop="4dip"
+			    android:layout_height="45dip"
+			    android:maxHeight="10dip"
+                android:layout_marginTop="0dip"
+			></MultiAutoCompleteTextView>
+		</TableRow>
+	</TableLayout>
+	
+	<!-- TextView android:text="@string/cp_subject" android:gravity="center"></TextView-->
+    
+     <!-- android:cacheColorHint="#00000000" -->
+	<EditText android:id="@+id/cp_subjectText"
+		android:layout_marginRight="2dip" android:layout_marginLeft="2dip"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:hint="@string/cp_subject" android:singleLine="true"
+		android:textAppearance="?android:attr/textAppearanceMedium" 
+		android:inputType="textEmailSubject|textAutoCorrect|textCapSentences|textImeMultiLine"
+		android:imeOptions="actionNext"
+		android:textColor="@android:color/primary_text_light"
+		/>
+	
+
+	<EditText android:id="@+id/mainBody" android:layout_width="fill_parent"
+		android:layout_height="fill_parent"  android:gravity="top|left" 
+		android:layout_weight="1"
+		android:minLines="3"
+		android:inputType="textMultiLine|textAutoCorrect|textCapSentences"
+		android:textColor="@android:color/primary_text_light"
+		android:textAppearance="?android:attr/textAppearanceSmallInverse"></EditText>
+	<!--  
+	<Button android:id="@+id/cp_resAddAttachment" android:text="@string/cp_resaddAttachment"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_gravity="left"
+			>
+    </Button>
+      -->
+ 	<ListView
+	    android:id="@+id/attachmentListView"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/attach_list_item_bg" 
+	    android:visibility="gone"
+	    android:divider="#FFFFFF"
+	    android:dividerHeight="1px" 
+	    android:clipChildren="true">
+       <!--android:background="@drawable/attach_list_item_bg"  
+       android:divider="#FFCC00" 
+         
+            -->
+	</ListView>
+	<CheckBox android:id="@+id/includeAttachmentCb"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="@string/cp_includeAttachment"
+		android:textColor="@color/blue"
+		android:visibility="gone"></CheckBox>
+		
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/cp_addRefLayout"
+		android:visibility="gone">
+		<CheckBox android:id="@+id/addRefCb" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/cp_addRef"
+			android:layout_weight="1"
+			android:textColor="@color/blue"
+			android:visibility="gone"></CheckBox>
+		<Button android:id="@+id/cp_respondInlineBtn" android:text="@string/cp_respondInline"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_gravity="right"
+			android:visibility="gone"></Button>
+	</LinearLayout>
+		
+	<WebView android:id="@+id/refOldMailwView" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone"
+		android:background="@color/ash_gray"
+		/>	
+		
+</LinearLayout>
+</ScrollView>
+   
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@id/cp_bottomBar"
+		android:layout_alignParentBottom="true"
+		android:background="@drawable/bottom_menu_btn_bg"
+		>
+
+		<Button android:id="@+id/cp_sendBtn" android:text="@string/cp_sendMail"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1"
+		    android:textColor="@color/white"
+			android:background="@drawable/menu_button_selector"
+			android:drawableLeft="@drawable/make_send_mail_bg"
+            android:drawablePadding="-15sp"
+            android:layout_marginRight="-1sp"
+			></Button>
+		<Button android:id="@+id/cp_saveBtn" android:text="@string/cp_saveMail"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:textColor="@color/white"
+			android:background="@drawable/menu_button_selector"
+			android:drawableLeft="@drawable/make_draft_bg"
+            android:drawablePadding="-15sp"
+            android:layout_marginRight="-1sp"
+            android:layout_marginLeft="-1sp"
+			></Button>
+		<Button android:id="@+id/cp_cancelBtn" android:text="@string/cancel"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:textColor="@color/white"
+			android:background="@drawable/menu_button_selector"
+			android:drawableLeft="@drawable/cancel_all_bg"
+            android:drawablePadding="-15sp"
+            android:layout_marginLeft="-1sp"
+			></Button>
+
+	</LinearLayout>
+</RelativeLayout>

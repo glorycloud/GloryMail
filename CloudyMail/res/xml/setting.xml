@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+<PreferenceCategory android:key="normalSetting" android:title="@string/setting_inout">
+
+<!-- <ListPreference 
+android:entryValues="@array/setting_mailcount_values" 
+android:entries="@array/setting_mailcount_array" 
+android:dialogTitle="@string/setting_mail_number" 
+android:title="@string/setting_mail_number" 
+android:key="@string/key_mail_number">
+</ListPreference>
+ -->
+<EditTextPreference
+android:positiveButtonText="@string/confirm_button"
+android:negativeButtonText="@string/cancel_button"
+android:dialogTitle="@string/string_character_title" 
+android:title="@string/string_character_title" 
+android:key="@string/key_mail_signature">
+></EditTextPreference>
+ 
+<EditTextPreference
+android:positiveButtonText="@string/confirm_button"
+android:negativeButtonText="@string/cancel_button"
+android:dialogTitle="@string/string_serverAdd_title" 
+android:title="@string/string_serverAdd_title" 
+android:key="@string/key_server_address">
+></EditTextPreference>
+
+<Preference
+android:title="@string/string_clearhistory_title" 
+android:key="@string/key_clear_history">
+></Preference>
+<Preference
+ android:title="@string/string_clear_password_title"
+ android:key="@string/key_clear_password"
+></Preference>
+<Preference
+ android:title="@string/string_clear_cache_title"
+ android:key="@string/key_clear_cache"
+></Preference>
+</PreferenceCategory>
+	
+	<PreferenceCategory android:key="syncSetting"
+		android:title="@string/setting_sync">
+<!-- 
+		<ListPreference android:entryValues="@array/setting_sync_frequency_values"
+			android:entries="@array/setting_sync_frequency_array"
+			 android:dialogTitle="@string/setting_sync_frequency"
+			android:title="@string/setting_sync_frequency" 
+			android:key="@string/key_sync_frequency"></ListPreference>
+ -->
+		<CheckBoxPreference android:title="@string/setting_new_mail_led"
+			android:summaryOn="@string/setting_open" android:summaryOff="@string/setting_close"
+			android:key="@string/key_new_mail_led"  android:defaultValue="true"></CheckBoxPreference>
+		<CheckBoxPreference android:title="@string/setting_new_mail_vibrate"
+			android:summaryOn="@string/setting_open" android:summaryOff="@string/setting_close"
+			android:key="@string/key_new_mail_vibrate"  android:defaultValue="false"></CheckBoxPreference>
+		<!-- 
+		<RingtonePreference android:title="@string/setting_new_mail_ringtone"
+			android:dialogTitle="@string/setting_new_mail_ringtone"
+			android:key="@string/key_new_mail_ringtone"
+			android:showDefault="true"
+			android:showSilent="true"
+			android:ringtoneType="all"></RingtonePreference>
+		 -->
+		<CheckBoxPreference android:title="@string/setting_new_mail_sond"
+			android:summaryOn="@string/setting_open" android:summaryOff="@string/setting_close"
+			android:key="@string/key_new_mail_sond" android:defaultValue="true"></CheckBoxPreference>
+	</PreferenceCategory>
+	<PreferenceCategory android:key="muteSetting" android:title="@string/setting_mutetime">
+		<mobi.cloudymail.mailclient.TimePickerPreference
+			android:key="@string/key_mute_time"
+			android:widgetLayout="@layout/mute_timepicker_preference"
+			android:defaultValue="23:00-7:00-false" 
+		/>
+	</PreferenceCategory>
+</PreferenceScreen>

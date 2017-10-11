@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--
+        android:textColor="#000000"
+              android:textSize="22dip"android:padding="10dip" 
+    -->
+
+    <EditText
+        android:id="@+id/spinner_text"
+        android:layout_width="207dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_weight="0.18"
+        android:background="@drawable/spinner_sytle_bg"
+        android:inputType="textEmailAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/spinner_text"
+        android:src="@drawable/spinner_drop" />
+
+</RelativeLayout>

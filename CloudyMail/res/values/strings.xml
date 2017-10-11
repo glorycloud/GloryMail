@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="appName">Cloud Mail</string>
+	<string name="serverType">Server Type：</string>
+	<string name="pop3">pop3</string>
+	<string name="imap">imap</string>
+	<string name="exchange">exchange</string>
+	<string-array name="serverType">
+		<item>@string/pop3</item>
+		<item>@string/imap</item>
+		<item>@string/exchange</item>
+	</string-array>
+	<string name="finish">Finish</string>
+	<string name="next">Next</string>
+	<string name="prev">Prev</string>
+	<string name="advance">Advanced …</string>
+	<string name="accountTab">Account Name</string>
+	<string name="mailServerTab">Server Setting</string>
+	<string name="newStr">New …</string>
+	<string name="editStr">Edit …</string>
+	<string name="delete">Delete</string>
+    <string name="deleteForever">Delete Forever</string>
+	<string name="addStr">Add</string>
+	<string name="preview">Open Mail</string>
+	<string name="download">Download</string>
+	<string name="receiveMail">Check Mail</string>
+	<string name="receivingMail">Receiving Mail......</string>
+	<string name="writeMail">Compose</string>
+	<string name="account">Account</string>
+	<string name="previewInfo">This file is not previewable</string>
+	<string name="previewTitle">Info</string>
+	<string name="accountManager">Account Manager</string>
+	<string name="click_to_show_more_mail">Click to show more mails …</string>
+	<string name="noNewMail">No new mails</string>
+	<string name="calendar_menu">Calendar</string>
+	<string name="atta_exist">already exists</string>
+	<string name="addressBook">Address Book</string>
+	<string name="search">Search</string>
+	<string name="setting">Settings</string>
+	<string name="about">About</string>
+	<string name="folder">Folders</string>
+
+	
+	<string name="ab_name">Name</string>
+	<string name="ab_address">Address</string>
+	<string name="ab_empty_name">Name cann\'t be empty.</string>
+	
+	<string name="err_emptyAddress">Email address cann\'t be empty</string>
+	<string name="err_emptyPassword">Email password cann\'t be empty</string>
+	<string name="error">Error</string>
+	<string name="err_invalidAddress">Invalid mail address.</string>
+	<string name="err_invalidLoginName">Invalid account name.</string>
+	<string name="err_invalidServerAddress">Invalid server address.</string>
+	<string name="err_invalidServerPort">Invalid server port.</string>
+	<string name="err_invalidSmtpServer">Invalid SMTP server address.</string>
+	<string name="err_invalidSmtpPort">Invalid SMTP server port.</string>
+
+	<string name="pop3Port">POP3 Port: </string>
+	<string name="pop3Server">POP3 Server: </string>
+	<string name="imapPort">IMAP Port: </string>
+	<string name="imapServer">IMAP Server: </string>
+	<string name="exchangeServer">Server: </string>
+	<string name="exchangePort">Exchange Port: </string>
+	<string name="smtpPort">SMTP Port: </string>
+	<string name="smtpServer">SMTP Server: </string>
+	<string name="accountName">Login Name: </string>
+	<string name="useSSL">Use SSL</string>
+
+	<string name="info_findServerSetting">Congratulations, we find the server settings for you.
+		Please click \"Finish\" button to use this account,\n
+		or click \"Advanced\" button to change the settings.</string>
+	<string name="info_accountWizardWelcome">This wizard will help you to set up an email account.
+		Please type your mail address bellow, for example:\n
+		yourname@yourserver.com
+		Then click \"Next\" button."</string>
+	 <string name="PromptForPOPIMAP">This account may need POP3 or IMAP enabled to access mail. Generally you can do this by change mail setting by web login.</string>
+    <string name="PromptAccountSetting">Account Setting</string>	
+		
+
+	<string name="deleteAccountTitle">Delete Account</string>
+	<string name="deleteAccountQuery">Do you really want to delete account \"%1$s\"?
+	</string>
+	<string name="delAccountFailed">Failed to delete account,%1$s</string>
+	<string name="addAccountFailed">Failed to add account,%1$s</string>
+	<string name="updateAccountFailed">Failed to update account,%1$s</string>
+	<string name="err_accountExist">This account already exist.</string>
+	<string name="err_oldAccountNotExist">Account \"%1$s\" does not exist.</string>
+
+	<string name="reply">Reply</string>
+	<string name="replyAll">Reply All</string>
+	<string name="forward">Forward</string>
+	<string name="attachment">Attachment</string>
+	<string name="cancel">Cancel</string>
+	
+	<string name="ok">OK</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+
+	<string name="exit">Exit</string>
+	<string name="exitQuestion">Do you really want to exit?</string>
+	<string name="networkProblem">Network problem, cann\'t connect to server.</string>
+	<string name="logining">Login...</string>
+	<string name="failLogin">Failed to login</string>
+	<string name="fl_checkSetting">Please check account settings and password are all correct.</string>
+	<string name="fl_cannotConnectServer">Can not connect to server, please try later.</string>
+	<string name="internal_error">Internal error!</string>
+	
+	<string name="atta_cancelDownload">Cancel downloading</string>
+	<string name="atta_overWrite">Overwrite existing file</string>
+	<string name="atta_saveAsNewfile">Save attachment as:</string>
+
+	<string name="atta_sdcardNotAvailable">SD card is not available.</string>
+	<string name="atta_sdcardTitle">Message</string>
+	<string name="atta_sdcardReadOnly">SD card is read only.</string>
+	<string name="atta_fileexists">File exists</string>
+	<string name="atta_fileSaved">File was saved to:</string>
+	<string name="atta_import">is imported successfully!</string>
+	<string name="atta_downloading">Downloading...</string>
+	<string name="atta_fileNameEmpty">File name is empty.</string>
+	<string name="atta_file_Mode">File</string>
+	<string name="atta_Photo_Mode">Take photo</string>
+	<string name="atta_Record_Mode">Take record</string>
+	<string name="atta_Choose_Mode">What to attach</string>
+
+	<string name="cp_addresser">From:</string>
+	<string name="cp_to">To:</string>
+	<string name="cp_cc">Cc:</string>
+	<string name="cp_bcc">Bcc:</string>
+	<string name="cp_contentHint">Mail Content</string>
+	<string name="cp_sendTime">Send time:</string>
+	<string name="cp_addRef">Quote original mail</string>
+	<string name="cp_respondInline">Inline original mail</string>
+	<string name="cp_resaddAttachment">Add attachment</string>
+	<string name="cp_includeAttachment">Forward with attachments.</string>
+	<string name="cp_sendMail">Send</string>
+	<string name="cp_saveMail">Save draft</string>
+	<string name="cp_subject">Subject:</string>
+	<string name="cp_selectToAddr">Select TO recipients:</string>
+	<string name="cp_selectCcAddr">Select CC recipients:</string>
+	<string name="cp_selectBccAddr">Select BCC recipients:</string>
+	<string name="cp_specifyAddr">No recipient specified.</string>
+	<string name="cp_invalidAddr">Mail address is invalid</string>
+	<string name="cp_emptySubjectMsg">The subject is empty, send mail anyway?</string>
+	<string name="cp_whetherAddAddressBook">Address book is empty, add contract now?</string>
+	<string name="cp_immediatelyAdd">Yes</string>
+	<string name="cp_laterSay">No</string>
+	<string name="cp_isSaveDrafts">Save to Draft box?</string>
+	<string name="cp_saveAndExit">Save and exit</string>
+	<string name="cp_ReturnTo">Cancel</string>
+	
+	<string name="cp_emptySubject">Empty Subject</string>
+	<string name="cp_discardMail">Discard Mail</string>
+	<string name="cp_discardMailMsg">Mail not sent yet, discard this mail?</string>
+	<string name="cp_sendingMail">Sending mail ...</string>
+	<string name="cp_sendSuccess">Successfully sent.</string>
+	<string name="cp_sendFailure">Failed to send this mail:</string>
+	<string name="cp_saveMailSuccess">Saved mail to outbox.</string>
+	<string name="cp_saveMailFail">Failed to save draft:</string>
+	<string name="inbox">Inbox</string>
+
+	<string name="openingMail">Opening mail ...</string>
+	<string name="openingAttachment">Opening attachment ...</string>
+
+	<string name="op_markRead">Mark as Read</string>
+	<string name="op_markUnread">Mark as Unread</string>
+	<string name="op_recoverMail">Recover</string>
+	<string name="op_selectAll">Select All</string>
+	<string name="op_disselectAll">Select None</string>
+	<string name="op_moveMail">Move</string>
+
+	
+	<string name="err_notConnected">Network connection is unavailable</string>
+	
+	<string name="setting_inout">Normal Setting</string>
+	<string name="setting_open">Enable</string>
+	<string name="setting_close">Disable</string>
+	<string name="setting_multipage_mail">Show mail in multiple-page mode</string>
+	<string name="setting_mail_number">Max mail count per reception</string>
+	<string-array name="setting_mailcount_array">
+		<item>10</item>
+		<item>20</item>
+		<item>30</item>
+	</string-array>
+	<string-array name="setting_mailcount_values">
+		<item>10</item>
+		<item>20</item>
+		<item>30</item>
+	</string-array>
+    <string name="character_signature">From My Cloud Mail</string>
+    <string name="string_character_title">Personality Signature</string>
+    <string name="automatic_signature">From My Cloud Mail</string>
+    <string name="confirm_button">OK </string>
+    <string name="cancel_button">Cancel</string>
+	<string name="setting_sync">Notification</string>
+	<string name="setting_sync_frequency">Interval to Check</string>
+	<string-array name="setting_sync_frequency_array">
+		<item>Never</item>
+		<item>5 minutes</item>
+		<item>10 minutes</item>
+		<item>Half an hour</item>
+		<item>1 hour</item>
+		<item>4 hours</item>
+	</string-array>
+	<string-array name="setting_sync_frequency_values">
+		<item>-1</item>
+		<item>5</item>
+		<item>10</item>
+		<item>30</item>
+		<item>60</item>
+		<item>240</item>
+	</string-array>
+	<string name="setting_new_mail_led">Flick LED on new mail</string>
+	<string name="setting_new_mail_vibrate">Vibrate on new mail</string>
+	<!-- <string name="setting_new_mail_ringtone">Ringtone</string> -->
+	<string name="setting_new_mail_sond">Ring on new mail</string>
+	
+	<string name="string_clearhistory_title">Clear search history</string>
+	<string name="click_clear_hostoryId">Click here to clear search history</string>
+	<string name="click_clear_posswordId">Click here to clear stored passwords</string>
+	<string name="click_clear_cacheId">Click here to clear cached mails</string>
+	
+	<string name="string_clear_password_title">Clear Password</string>
+	<string name="stirng_confirm_clear_password">Do you want to clear all stored passwords?</string>
+	<string name="stirng_confirm_clear">Yes</string>
+	<string name="stirng_cancel_clear">No</string>
+	
+    
+	<string name="string_clear_cache_title">Clear mail cache</string>
+	<string name="string_clear_cache">clear cache</string><!--  not used  -->
+	<string name="string_confirm_clear_cache">Do you want to clear cached mails?</string>
+	<string name="setting_mutetime">Mute Time</string>
+	<string name="silent">silent</string>
+	
+	<string name="key_clear_history">key_clear_history</string>
+	
+	<string name="key_new_mail_led">key_new_mail_led</string>
+	<string name="key_new_mail_vibrate">key_new_mail_vibrate</string>
+	<string name="key_new_mail_sond">key_new_mail_sond</string>
+	<!--<string name="key_new_mail_ringtone">key_new_mail_ringtone</string>-->
+	<string name="key_sync_frequency">key_sync_frequency</string>
+	<string name="key_mail_number">key_mail_number</string>
+	<string name="key_mail_signature">key_mail_signature</string>
+    <string name="key_server_address">key_server_address</string>
+    <string name="key_clear_password">key_clear_password</string>
+    <string name="key_clear_cache">key_clear_cache</string>
+    <string name="key_mute_time">key_mute_time</string>
+    
+	
+    <string name="string_serverAdd_title">Cloud Server IP</string>
+
+	<string name="update_software">Upgrade</string>
+	<string name="err_get_latest_version">Failed to get latest version number!</string>
+	<string name="about_title">About Cloud Mail</string>
+	<string name="about_version">1.4.3</string>
+	<string name="about_copyright">\u00a9 2013 GloryCloud Co. Ltd. All rights reserved\n
+Support:support@glorycloud.com.cn</string>
+
+	<string name="no_need_update_str">Current version:%1$s is the latest，No newer version.</string>
+	<string name="whether_update_str">Current version:%1$s ，\n\nFind new version:%2$s \n\nNew feature:\n%3$s \nDo you
+		want to upgrade?</string>
+	<string name="update_downloading">Downloading file</string>
+	<string name="update_wait">Please wait ...</string>
+	<string name="err_update_failed">Failed to upgrade:</string>
+
+	<string name="sort">Sort</string>
+	<string name="sort_date">Date</string>
+	<string name="sort_subject">Subject</string>
+	<string name="sort_from">From</string>
+    <string name="sort_readstate">Read</string>
+    <string name="sort_asterisk">Asterisk</string>
+    
+	<string name="ntf_new_mail_name">New Mail</string>
+    <string name="ntf_new_mail_title">You have %1$d new mails</string>
+    
+    <string name="Mail_total">Total:</string>
+	<string name="unRead_count">Unread</string>
+    
+    <string name="folder_global">Global Inbox</string>
+	<string name="folder_inbox">Inbox</string>
+    <string name="folder_notsentbox">Sending Box</string>
+	<string name="folder_sentbox">Sent Box</string>
+	<string name="folder_draft">Draft</string>
+	<string name="folder_delete">Trash</string>
+	<string name="folder_write">Out Box</string>
+        
+	<string name="snapshot">Camera</string><!--  not used -->
+	<string name="Camer">Camera</string><!--  not used -->
+    
+     <string name="search_invoke">Speak to search</string>
+
+    <string name="searchMenu">Search</string>
+    <string name="searchLabel">Search</string>
+    <string name="searchprompt">Search</string>
+    <string name="searchHint">Input content to search</string>
+    <string name="mailbox">Account:</string>
+    <string name="password">Password:</string>
+	<string name="sendMail">Send</string>
+	<string name="addCcMail">Add CC/BCC</string>
+	<string name="addAttacmentMail">Attacments</string>
+	<string name="cancleMail">Cancel</string>
+	
+	<string name="replyMail">Reply</string>
+    <string name="dseleteMail">Delete</string>
+	<string name="inSending">Sending ...</string>
+	<string name="search_mail_config">Searching for mail configuration...</string>
+	<string name="fail_to_get_mail_config">Fail to get mail configuration.</string>
+	<string name="fail_to_get_attach">Fail to get attachments</string>
+	<string name="fetech_attach">Fetching attachments list...</string>
+	<string name="whether_syncup_mail_immediately">Your account has been set up. Do you want to check mail now?  </string>
+	<string name="whether_syncup_mail_immediately_title">Check Mail?</string>
+	<string name="wait_sending">Sending mail for you, please wait ...</string>
+	<string name="no_account_and_ask_to_create">No account has setup, create accuount immediately？</string>
+	<string name="whether_setup_account">Set Up Account</string>
+	
+	<string name="feedback_account">Feedback</string>
+	<string name="feedback_msg">Thank you for your feedback.</string>
+	<string name="feedback_msg_title">Feedback</string>
+	<string name="feedback_software_version">Software version:</string>
+	<string name="feedback_sdk_version ">Android version:</string>
+	<string name="feedback_phone_Model">Phone model:</string>
+	<string name="feedback_network_type">Network type:</string>
+	<string name="feedback_language_Environment">Language :</string>
+	<string name="feedback_my_recommend">My comments:</string>
+	<string name="no_network_connection">No network connection</string>
+	
+	<string name="attachManager">Attachments</string>
+	 <string name="draft">(draft)</string>
+	<string name="stop">Cancel</string>
+	<string name="open_downloaded_attach">Open</string>
+	<string name="pull_to_refresh_pull_label">Pull to refresh</string>
+    <string name="pull_to_refresh_release_label">Release to refresh</string>
+    <string name="pull_to_refresh_refreshing_label">Loading</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh</string>
+    
+    <string name="add_account_titleRight">New Account</string>
+    
+    <string name="email_assistant">Accounts</string>
+    <string name="write_email">Compose</string>
+    <string name="address_book">Address Book</string>
+    <string name="email_settings">E-mail setting</string>
+    <string name="account_setting">Account setting</string>
+    <string name="attachment_manager">Attachment Manager</string>
+    <string name="accountWizard_Warn">Server type has been changed, this account\'s local data be cleared!</string>
+    <string name="warning">Warning!</string>
+    
+     <!-- used for calendar -->
+    <string name="hello">Hello World, Main</string>
+	<string name="recordremind_name">recordinfo</string>
+ 	<string name="mms">Use mms to send this mail?</string>
+	<string name="mms_info">Information</string>
+	
+	<string name="setting_info">information</string>
+	<string name="open_setting">open enable data access over mobile networks now?</string>
+	
+	<string name="app_name">Calendar</string>
+	<string name="today">Today</string>
+	<string name="assign_date">Go to date</string>
+	<string name="check_event">Agenda</string>
+	<string-array name="week_name">
+		<item>SUN</item>
+		<item>MON</item>
+		<item>TUE</item>
+		<item>WED</item>
+		<item>THU</item>
+		<item>FRI</item>
+		<item>SAT</item>
+	</string-array>
+	<string-array name="month_name">
+		<item>一月</item>
+		<item>二月</item>
+		<item>三月</item>
+		<item>四月</item>
+		<item>五月</item>
+		<item>六月</item>
+		<item>七月</item>
+		<item>八月</item>
+		<item>九月</item>
+		<item>十月</item>
+		<item>十一月</item>
+		<item>十二月</item>
+	</string-array>
+	<string name="addEventBtn">Add Event</string>	<string name="delEventBtn">Delete Event</string>
+	<string name="sendEventBtn">Send Event</string>
+	<string name="showPasswordInClear">Show password clear</string>
+	<string name="rememberPassword">Remember</string>
+	<string name="already_first_mail">This is already the first mail.</string>
+	<string name="already_last_mail">This is already the last mail.</string>
+	<string name="add_event">New Event</string>
+	<string name="exitprogram">Press again to exit</string>
+	<string name="exitpreview">Press again to exit preview</string>
+	 <string name="intoBtn">Start</string>
+	 
+	 <string name="choosePage">Choose page</string>
+	 <string name="already_first_page">This is already the first page.</string>
+	 <string name ="already_last_page" >This is already the last page.</string>
+	 <string name ="timeout" >Timeout to load content. This may happens for bad network connection or very large email. Please retry after a while.</string>
+	 <string name ="timeout_title" >Timeout</string>
+	 <string name ="failedDownloadAttach" >Failed to download attachment</string>
+	 <string name ="reinputPassword" >Wrong password!  Reinput password for account:\n
+</string>
+	<string name ="inputPassword">Input password for account:\n
+</string>
+	<string name ="noSimCard">No sim card</string>
+	<string name ="newAccount">New Account</string>
+	<string name ="content">Content:</string>
+</resources>
+

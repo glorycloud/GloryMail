@@ -1,0 +1,13 @@
+ <!--?xml version="1.0" encoding="UTF-8"?-->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false" android:visible="true">
+    <item android:drawable="@drawable/sign_up_1" android:duration="160" />
+    <item android:drawable="@drawable/sign_up_2" android:duration="160" />
+    <item android:drawable="@drawable/sign_up_3" android:duration="160" />
+    <item android:drawable="@drawable/sign_up_4" android:duration="160" />
+    <item android:drawable="@drawable/sign_up_5" android:duration="160" />
+    <item android:drawable="@drawable/sign_up_6" android:duration="160" />
+    <item android:drawable="@drawable/sign_up_7" android:duration="160" />
+    <item android:drawable="@drawable/sign_up_8" android:duration="160" />
+    <item android:drawable="@drawable/sign_up_9" android:duration="160" />
+    <item android:drawable="@drawable/sign_up_10" android:duration="160" />
+</animation-list>

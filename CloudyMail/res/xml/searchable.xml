@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable
+  xmlns:android="http://schemas.android.com/apk/res/android"
+   android:label="@string/searchLabel"
+    android:hint="@string/searchHint"
+    android:searchMode="showSearchLabelAsBadge"
+    
+    android:voiceSearchMode="showVoiceSearchButton|launchRecognizer"
+    android:voiceLanguageModel="free_form"
+    android:voicePromptText="@string/search_invoke"
+    
+    android:searchSuggestAuthority="mobi.cloudymail.mailclient.SearchSuggestionSampleProvider"
+    android:searchSuggestSelection=" ? "
+    >
+    
+</searchable>

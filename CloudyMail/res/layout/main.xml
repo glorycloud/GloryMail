@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:padding="0dp" android:background="@color/white">
+
+	<mobi.cloudymail.mailclient.PullToRefreshListView 
+	    android:id="@id/android:list" 
+	    android:layout_width="fill_parent"
+		android:layout_height="0dip" 
+		android:drawSelectorOnTop="false" 
+		android:fastScrollEnabled="true"
+		android:layout_weight="1"
+		android:fadingEdge="none"
+		android:cacheColorHint="#00000000"
+        android:divider="#c0c0c0"
+        android:dividerHeight="4dp"
+        android:childDivider="#c0c0c0"
+		/>
+       <!-- 	android:background="@color/white" -->
+		<!--  android:dividerHeight="1dip" -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/selectMailLayout"
+		android:visibility="gone">
+		<Button android:id="@+id/delMailBtn" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:text="@string/delete" 
+			android:textColor="@color/white"
+			android:background="@drawable/menu_button_selector"
+			android:drawableLeft="@drawable/del_main_bottom_bg"
+            android:drawablePadding="-15sp"
+            android:layout_marginRight="0sp"
+            android:layout_marginLeft="-1sp"
+			/>
+		<!-- android:paddingTop="32sp" -->
+		<Button android:id="@+id/markReadBtn" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:textColor="@color/white"
+			android:background="@drawable/menu_button_selector"
+			android:drawableLeft="@drawable/unread_main_botton_bg"
+            android:drawablePadding="-15sp"
+            android:layout_marginRight="0sp"
+            android:layout_marginLeft="-1sp"
+			android:text="@string/op_markRead" />
+		<Button android:id="@+id/markUnreadBtn" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:textColor="@color/white"
+			android:background="@drawable/menu_button_selector"
+			android:drawableLeft="@drawable/mark_unread"
+            android:drawablePadding="-15sp"
+            android:layout_marginRight="0sp"
+            android:layout_marginLeft="-1sp"
+			android:text="@string/op_markUnread" />
+		<Button android:id="@+id/recoverMailBtn" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:textColor="@color/white"
+			android:background="@drawable/menu_button_selector"
+			android:drawableLeft="@drawable/cancel_all_bg"
+            android:drawablePadding="-15sp"
+            android:layout_marginRight="0sp"
+            android:layout_marginLeft="-1sp"
+			android:text="@string/op_recoverMail" android:visibility="gone"/>
+		<Button android:id="@+id/selectAllBtn" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:textColor="@color/white"
+			android:background="@drawable/menu_button_selector"
+			android:drawableLeft="@drawable/check_all_bg"
+            android:drawablePadding="-15sp"
+            android:layout_marginRight="0sp"
+            android:layout_marginLeft="-1sp"
+			android:text="@string/op_selectAll"/>
+		<!-- Button android:id="@+id/moveMailBtn" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:text="@string/op_moveMail" android:visibility="gone"/-->
+	  
+	</LinearLayout>
+</LinearLayout>
+

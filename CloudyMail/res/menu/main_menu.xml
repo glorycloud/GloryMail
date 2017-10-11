@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:visible="false" android:titleCondensed="@string/receiveMail"
+		android:checked="false" android:numericShortcut="7"
+		android:alphabeticShortcut="R" android:id="@+id/recvMailMenu"
+		android:enabled="true" android:checkable="false" android:title="@string/receiveMail"
+		android:menuCategory="container" android:icon="@drawable/ic_menu_refresh"></item>
+   <!--
+    <item android:title="@string/folder" android:id="@+id/folderMenu"
+		android:menuCategory="container" android:enabled="true"
+		android:icon="@drawable/ic_menu_folder"></item>
+	  -->
+	<item android:title="@string/search" 
+	     android:id="@+id/searchMenu"
+		android:menuCategory="container" 
+		android:icon="@drawable/search"
+		android:background="@color/Cambridge_blue"
+		android:enabled="true"/>
+	<item android:title="@string/writeMail" android:id="@+id/composeMailMenu"
+		android:titleCondensed="@string/writeMail" android:menuCategory="container"
+		android:icon="@drawable/ic_menu_compose"></item> 
+	<item android:title="@string/attachManager" android:id="@+id/attachManager"
+		android:menuCategory="container"  android:icon="@drawable/attachment_menu"></item>
+    <item android:title="@string/calendar_menu" android:id="@+id/calendarMenu"
+		android:menuCategory="container" android:icon="@drawable/calendar"></item>  
+    <item android:title="@string/sort" android:id="@+id/sort"
+		android:menuCategory="container" android:icon="@drawable/sort">
+	    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+	    <group android:id="@+id/sort_menu_group"
+           android:menuCategory="secondary"
+           android:checkableBehavior="single"> 
+           
+			<item android:title="@string/sort_date"
+			    android:id="@+id/sortDateItem"
+				android:menuCategory="container"
+				android:checked="true">
+			</item>
+			<item android:title="@string/sort_subject"
+			    android:id="@+id/sortSubjectItem"
+				android:menuCategory="container">
+			</item>
+			<item android:title="@string/sort_from"
+			    android:id="@+id/sortFromItem"
+				android:menuCategory="container">
+			</item>
+			<item android:title="@string/sort_readstate"
+			    android:id="@+id/sortReadedItem"
+				android:menuCategory="container">
+			</item>
+			<item android:title="@string/sort_asterisk"
+			    android:id="@+id/sortAsteriskItem"
+				android:menuCategory="container">
+			</item>
+			
+			</group>
+		</menu>
+		
+	</item>
+	
+	<item android:title="@string/addressBook" android:id="@+id/addressBookItem"
+		android:menuCategory="container" android:icon="@drawable/ic_menu_addressbook"></item>
+	<item android:title="@string/setting" android:id="@+id/settingMenu"
+		android:menuCategory="container" android:icon="@drawable/ic_menu_settings"></item>
+	<item android:title="@string/about" android:id="@+id/aboutMenu"
+		android:menuCategory="container"></item>
+	<item android:title="@string/update_software" android:id="@+id/updateMenu"
+		android:menuCategory="container"></item>
+	<item android:title="@string/feedback_account" android:id="@+id/feedbackMenu"
+		android:menuCategory="container"></item>    
+	<item android:title="@string/exit" android:id="@+id/exitApp"
+		android:menuCategory="container"></item>
+
+	
+</menu>

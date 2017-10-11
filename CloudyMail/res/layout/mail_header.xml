@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<TextView android:id="@+id/h_senderTxtView" 
+			android:text="@string/cp_addresser"  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:gravity="left"
+	android:textColor="@color/black"></TextView>
+	<TextView android:id="@+id/senderTxtView" 
+			android:text=""  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+	android:textColor="@color/black"></TextView>
+	</LinearLayout>
+			
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<TextView android:id="@+id/h_sendTimeTxtView" 
+			android:text="@string/cp_sendTime"  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:gravity="left"
+	android:textColor="@color/black"></TextView>
+	<TextView android:id="@+id/sendTimeTxtView" 
+			android:text=""  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+	android:textColor="@color/black"></TextView>
+	</LinearLayout>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/h_receiverLayout">
+	<TextView android:id="@+id/h_receiverTxtView" 
+			android:text="@string/cp_to"  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:gravity="left"
+	android:textColor="@color/black"></TextView>
+	<TextView android:id="@+id/receiverTxtView" 
+			android:text=""  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+	android:textColor="@color/black"></TextView>
+	</LinearLayout>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/h_ccLayout">
+	<TextView android:id="@+id/h_ccTxtView" 
+			android:text="@string/cp_cc"  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:gravity="left"
+	android:textColor="@color/black"></TextView>
+	<TextView android:id="@+id/ccTxtView" 
+			android:text=""  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+	android:textColor="@color/black"></TextView>
+	</LinearLayout>
+
+</LinearLayout>

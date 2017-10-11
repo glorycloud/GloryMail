@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/folder_account_item_back">
+    <ImageView 
+        android:id="@+id/groupImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:maxWidth="500dip"
+        android:maxHeight="500dip"
+        android:src="@drawable/open"
+        android:padding="10dip"
+        />
+
+    <TextView
+        android:id="@+id/groupText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/groupImage"
+        android:gravity="left|center_vertical"
+        android:height="50dip"
+        android:text="test"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+    <ImageButton
+        android:id="@+id/folder_del_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/folder_item_del"
+        android:focusable="false"
+		android:focusableInTouchMode="false"
+		android:visibility="invisible"   
+        />
+
+    <ImageButton
+        android:id="@+id/folder_edit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/folder_del_btn"
+        android:background="@drawable/folder_item_edit" 
+        android:focusable="false"
+		android:focusableInTouchMode="false"
+	    android:visibility="invisible"
+        />
+</RelativeLayout>       
+
+    
+  

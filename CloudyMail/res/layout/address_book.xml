@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:padding="1dp"
+	android:background="@color/widget_background"
+	>
+	<ListView android:id="@+id/addressBookListView"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:scrollingCache="false"
+		android:layout_marginBottom="10dp"
+		android:fadingEdge="none" 
+        android:divider="@null"
+        android:cacheColorHint="#00000000"
+        android:fadeScrollbars="true"
+		>
+	</ListView>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:gravity="right"
+		android:background="@drawable/bottom_menu_btn_bg"
+		>
+		<Button android:id="@+id/ab_newBtn" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:text="@string/newStr" 
+			android:textColor="@color/white"
+			android:background="@drawable/menu_button_selector"
+			android:drawableLeft="@drawable/make_draft_bg"
+            android:drawablePadding="-15sp"
+              android:layout_marginRight="-1sp"
+			/>
+		<Button android:id="@+id/ab_editBtn" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:text="@string/editStr"
+			android:textColor="@color/white"
+			android:background="@drawable/menu_button_selector"
+			android:drawableLeft="@drawable/address_book_edit"
+            android:drawablePadding="-15sp"
+              android:layout_marginRight="-1sp"
+              android:layout_marginLeft="-1sp"
+			 />
+		<Button android:id="@+id/ab_deleteBtn" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:text="@string/delete" 
+			android:textColor="@color/white"
+			android:background="@drawable/menu_button_selector"
+			android:drawableLeft="@drawable/del_main_bottom_bg"
+            android:drawablePadding="-15sp"
+              android:layout_marginLeft="-1sp"
+			/>
+	</LinearLayout>
+</LinearLayout>

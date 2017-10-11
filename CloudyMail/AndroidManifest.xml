@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="mobi.cloudymail.mailclient" android:versionCode="16"
+	android:versionName="@string/about_version">
+	
+    <uses-sdk android:minSdkVersion="9" 
+	          android:targetSdkVersion="9"
+	          android:maxSdkVersion="16"
+	           />
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+	<uses-permission android:name="android.permission.FLASHLIGHT"></uses-permission>
+	<uses-permission android:name="android.permission.CAMERA"></uses-permission>
+	<uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>  
+	
+	<uses-permission android:name="android.permission.READ_CALENDAR"></uses-permission>   
+	<uses-permission android:name="android.permission.WRITE_CALENDAR"></uses-permission>
+	<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"> </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"> </uses-permission>
+           
+ 	<uses-feature android:name="android.hardware.camera" ></uses-feature>
+ 	<uses-feature android:name="android.hardware.camera.autofocus" ></uses-feature>
+ 	
+ 	<uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+ 	<uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+	 <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" /> 
+ 	<application android:icon="@drawable/cloudymail"
+		android:label="@string/appName" android:name="mobi.cloudymail.util.MyApp">		
+        
+	    <activity
+            android:label="@string/appName"
+            android:name=".WellComeActicity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity android:name=".InBoxActivity" android:label="@string/appName"			
+                  android:configChanges="orientation|keyboardHidden"
+                  android:launchMode="singleTop"
+                  android:theme="@style/titlebarstyle"
+                  >
+                  
+			<!--  <intent-filter>
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			-->
+			<intent-filter>
+			    <action android:name="android.intent.action.SEARCH"/>
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			 <meta-data android:name="android.app.default_searchable"
+                       android:value=".InBoxActivity" />
+			 <meta-data
+               android:name="android.app.searchable"
+               android:resource="@xml/searchable"
+             ></meta-data>
+		</activity>
+		
+		
+		
+		<activity android:name=".FolderActivity" android:label="@string/appName"			
+                  android:configChanges="orientation|keyboardHidden"
+                    android:theme="@style/titlebarstyle"  
+                  android:launchMode="singleTop">
+                  
+			<intent-filter>
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".SplashActivity"
+        		  android:screenOrientation="portrait" >
+        		    <intent-filter>
+              <!--   <action android:name="android.intent.action.MAIN" />--> 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity android:name=".GlobalInBoxActivity" android:label="@string/appName"			
+                  android:configChanges="orientation|keyboardHidden"
+                  android:launchMode="singleTop"
+                  android:theme="@style/titlebarstyle"
+                  >
+			<intent-filter>
+			    <action android:name="android.intent.action.SEARCH"/>
+				<!--  <action android:name="android.intent.action.MAIN" />-->
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			 <meta-data android:name="android.app.default_searchable"
+                       android:value=".GlobalInBoxActivity" />
+			
+			 <meta-data
+               android:name="android.app.searchable"
+               android:resource="@xml/searchable"
+             ></meta-data>
+		</activity>
+		
+		<activity android:name=".OutBoxActivity" android:label="@string/appName"
+		          android:theme="@style/titlebarstyle"	
+		          android:launchMode="singleTop"		
+                  android:configChanges="orientation|keyboardHidden">
+			<!--  <intent-filter>
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			-->
+			
+			<intent-filter>
+			    <action android:name="android.intent.action.SEARCH"/>
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			 <meta-data android:name="android.app.default_searchable"
+                       android:value=".OutBoxActivity" />
+			 <meta-data
+               android:name="android.app.searchable"
+               android:resource="@xml/searchable"
+             ></meta-data>
+		</activity>
+		<activity android:name=".DeleteBoxActivity" android:label="@string/appName"		
+		           android:theme="@style/titlebarstyle"	
+                  android:configChanges="orientation|keyboardHidden">
+			<intent-filter>
+				 <action android:name="android.intent.action.SEARCH"/>
+				 <category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			 <meta-data android:name="android.app.default_searchable"
+                       android:value=".DeleteBoxActivity" />
+			 <meta-data
+               android:name="android.app.searchable"
+               android:resource="@xml/searchable"
+             ></meta-data>
+		</activity>
+		
+		
+		<activity android:name=".AccountWizard" android:label="@string/appName"
+			android:windowSoftInputMode="stateVisible|adjustResize"
+			android:configChanges="orientation|keyboardHidden"
+			android:theme="@style/titlebarstyle">
+			<intent-filter>
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+        <!-- android:theme="@android:style/Theme.NoTitleBar" -->
+		<activity android:name=".MailViewer" 
+			android:configChanges="orientation|keyboardHidden"
+			  android:theme="@android:style/Theme.NoTitleBar">
+			>
+			<intent-filter>
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".AttachmentViewer" android:label="@string/appName"
+		android:configChanges="orientation|keyboardHidden"
+		android:theme="@style/titlebarstyle">
+			<intent-filter>
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".Composer" android:label="@string/appName"
+		android:configChanges="orientation|keyboardHidden"
+		android:theme="@style/titlebarstyle" 
+		>
+			<intent-filter>
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.SEND" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="*/*" />
+			</intent-filter>
+			<intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+                <data android:scheme="mailto" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <data android:scheme="mailto" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+		</activity>
+
+		<activity android:name=".AddressBook" android:label="@string/appName"
+		android:configChanges="orientation|keyboardHidden"
+		android:theme="@style/titlebarstyle"
+		>
+			<intent-filter>
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".FileBrowser" android:label="@string/appName"
+		android:configChanges="orientation|keyboardHidden"
+		android:theme="@style/titlebarstyle">
+			<intent-filter>
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".SettingPage" android:label="@string/setting"
+		android:configChanges="orientation|keyboardHidden"
+		android:theme="@style/titlebarstyle"
+		>
+			<intent-filter>
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".FeedbackActivity" android:label="@string/feedback_account"
+		android:configChanges="orientation|keyboardHidden"
+		android:theme="@style/titlebarstyle"
+		>
+			<intent-filter>
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+       
+		    	    
+		<!-- 
+		<activity android:name=".TranslucentButton"
+		          android:theme="@style/Theme.Translucent">
+		</activity> -->
+		<activity android:name=".TranslucentButton" android:label="@string/appName" android:theme="@style/Theme.Translucent"
+		android:configChanges="orientation|keyboardHidden">
+			<intent-filter>
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".AttachManager"
+		android:configChanges="orientation|keyboardHidden">
+			<intent-filter>
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".NewAttachmentManager" android:label="@string/attachManager"
+		android:configChanges="orientation|keyboardHidden"
+		android:theme="@style/titlebarstyle"
+		>
+			<intent-filter>
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name="mobi.cloudymail.calendar.Calendar_main" android:label="@string/app_name"
+		    android:theme="@style/titlebarstyle" android:screenOrientation="portrait"
+		    >
+			<intent-filter> 
+				<!--  action android:name="android.intent.action.MAIN" /-->
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name="mobi.cloudymail.calendar.AllCalendarEvents" android:label="@string/app_name" 
+		    android:theme="@style/titlebarstyle">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+		
+
+		<provider android:name=".SearchSuggestionSampleProvider"
+  					   android:authorities="mobi.cloudymail.mailclient.SearchSuggestionSampleProvider">
+  		</provider>
+		<service android:enabled="true" android:name=".ReceiveMailService"/>
+    
+		  
+		<meta-data android:value="5015fadb527015657500000a" android:name="UMENG_APPKEY"></meta-data> 
+ 		<meta-data android:value="Channel ID" android:name="UMENG_CHANNEL"/>	
+ 		
+        <receiver android:name=".NetworkChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+ 				
+ 		
+ 		<service android:name="com.glorycloud.push.PushService" android:process=":push" android:priority = "1000" android:exported="false"/>
+        <receiver android:name="com.glorycloud.push.AlarmReceiver" android:process=":push" />
+        <receiver android:name="com.glorycloud.push.BootReceiver" android:process=":push" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name=".NewMessageReceiver" android:exported="true"> 
+            <intent-filter>
+                <action android:name="mobi.cloudymail.mailclient.NewMessage"></action>
+            </intent-filter>
+            
+        </receiver>
+ 		
+	</application>
+</manifest> 
+

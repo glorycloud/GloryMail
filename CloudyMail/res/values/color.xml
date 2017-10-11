@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="solid_blue">#0000ff</color>
+    <color name="red">#ff0000</color>
+    <color name="gray">#8f8f8f</color>
+    <color name="ltgray">#ffcccccc</color>
+    <color name="fogray">#E1FFFF</color>
+    <drawable name="white">#ffffffff</drawable>
+    <color name="widget_background">#ffffff</color>
+    <color name="text_color">#000000</color>
+    <color name="Cambridge_blue">#E0FFFF</color>
+    <color name="blue">#236B8E</color>
+    <color name="ash_gray">#D3D3D3</color>
+    
+    <color name="calendar_background">#FFFFFF</color> 
+    <color name="recordremind_background">#FFFFFF</color> 
+    <color name="border_color">#999999</color>
+    <color name="weekname_color">#999999</color>
+    <color name="gregorian_color">#999999</color>
+    <color name="day_color">#000000</color>
+    <color name="inner_grid_color">#999999</color>
+    <color name="prev_next_month_day_color">#999999</color>
+    <color name="event_symbol_color">#256FAE</color>
+    
+    <color name="calendar_text_color">#000000</color>
+    <color name="calendar_head_color">#FFFFFF</color>
+    <color name="recordremindtext_color">#000000</color>
+    
+    <color name="current_day_color">#000000</color>
+    <color name="today_background_color">#000000</color>
+    <color name="today_color">#000000</color>
+    <color name="sunday_saturday_color">#FF0000</color>
+    <color name="sunday_saturday_prev_next_month_day_color">#999999</color>   
+    <color name="tvMsg_color">#3399FF</color>
+    <color name="fakewhite">#E6E4E5</color>
+</resources>
+<!--    -->

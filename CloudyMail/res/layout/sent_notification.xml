@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="10dip"
+              android:id="@+id/notification_RelativeLayout"
+              >
+    <ImageView android:id="@+id/custom_notifi_image"
+        android:src="@anim/notification_fram_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+         ></ImageView>
+
+    <TextView android:id="@+id/custom_notifi_title"
+        android:text="uploading"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/custom_notifi_image"
+        ></TextView>
+  <!--  
+    <TextView android:id="@+id/custom_notifi_text"
+        android:text="uploading"
+        android:textColor="#000"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/custom_notifi_image"
+        android:layout_alignParentLeft="true"
+        ></TextView>
+    
+     <ProgressBar
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        
+     ></ProgressBar>
+     -->
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:id="@+id/noti_progressView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:max="100"
+        android:progress="100"
+        android:secondaryProgress="100"
+       android:layout_marginLeft="10dip"
+       android:layout_alignParentBottom="true"
+    	></ProgressBar>
+   
+   <!--  style="?android:attr/progressBarStyleHorizontal"
+    android:max="0"
+        android:progress="0"
+        android:layout_marginLeft="10dip"
+    -->
+</RelativeLayout>

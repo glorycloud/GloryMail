@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/widget_background"
+    >
+    <TextView
+        android:id="@+id/configurationInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/feedbackInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="149dp"
+        android:layout_weight="5.72"
+        android:gravity="top|left"
+        android:inputType="textMultiLine|textAutoCorrect|textCapSentences"
+        android:minLines="3"
+        android:textAppearance="?android:attr/textAppearanceSmallInverse"
+        android:textColor="@android:color/primary_text_light" >
+
+    </EditText>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" 
+        android:background="@drawable/bottom_menu_btn_bg"
+        >
+        <Button
+            android:id="@+id/confirmFeedbackBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cp_sendMail" 
+            android:textColor="@color/white"
+			android:background="@drawable/menu_button_selector"
+			android:drawableLeft="@drawable/make_send_mail_bg"
+            android:drawablePadding="-15sp"
+              android:layout_marginRight="-1sp"
+            android:paddingLeft="32sp"
+            />
+        <Button
+            android:id="@+id/cancleFeedbackBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel" 
+            android:textColor="@color/white"
+			android:background="@drawable/menu_button_selector"
+			android:drawableLeft="@drawable/cancel_all_bg"
+            android:drawablePadding="-15sp"
+            android:paddingLeft="32sp"
+            android:layout_marginLeft="-1sp"
+            />
+    </LinearLayout>
+</LinearLayout>

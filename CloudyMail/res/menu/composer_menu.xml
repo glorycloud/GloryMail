@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+  <!-- <item android:visible="false" 
+        android:titleCondensed="@string/sendMail"
+		android:checked="false" 
+		android:numericShortcut="7"
+		android:alphabeticShortcut="R" 
+		android:id="@+id/sendMailMenu"
+		android:enabled="true" 
+		android:checkable="false" 
+		android:title="@string/sendMail"
+		android:menuCategory="container" 
+		android:icon="@drawable/ic_email_send_button"></item>
+		 -->
+<item 
+        android:titleCondensed="@string/sendMail"
+		android:checked="false" 
+		android:numericShortcut="1"
+		android:alphabeticShortcut="S" 
+		android:id="@+id/sendMailMenu"
+		android:enabled="true" 
+		android:checkable="false" 
+		android:title="@string/sendMail"
+		android:menuCategory="container" 
+		android:icon="@android:drawable/ic_menu_send" 
+		></item>
+  <item 
+        android:titleCondensed="@string/addCcMail"
+		android:checked="false" 
+		android:id="@+id/addToCcMailMenu"
+		android:enabled="true" 
+		android:checkable="false" 
+		android:title="@string/addCcMail"
+		android:menuCategory="container" 
+		android:icon="@android:drawable/ic_menu_add"></item>
+  <item
+        android:titleCondensed="@string/addAttacmentMail"
+		android:checked="false" 
+		android:numericShortcut="2"
+		android:alphabeticShortcut="A" 
+		android:id="@+id/addAttacmentMenu"
+		android:enabled="true" 
+		android:checkable="false" 
+		android:title="@string/addAttacmentMail"
+		android:menuCategory="container" 
+		android:icon="@drawable/ic_menu_attachment_compose"></item>
+  <item 
+ 	    android:titleCondensed="@string/cancleMail"
+		android:checked="false" 
+		android:id="@+id/cancleMenu"
+		android:enabled="true" 
+		android:checkable="false" 
+		android:title="@string/cancleMail"
+		android:menuCategory="container" 
+		android:icon="@android:drawable/ic_menu_close_clear_cancel"></item>
+		 
+</menu>

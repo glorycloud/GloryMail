@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:background="@color/widget_background"
+	>
+<ListView android:id="@id/android:list" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:drawSelectorOnTop="false" android:background="#FFFFFF"
+		android:fastScrollEnabled="true"
+		android:fadingEdge="none"
+		android:layout_weight="1"/>
+<LinearLayout android:orientation="horizontal"
+	        android:id="@+id/newAttachOpLayout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone"
+	        android:background="@drawable/bottom_menu_btn_bg"
+	        >
+	        <Button
+	    android:id="@+id/newDownladAttachBtn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/download" 
+	    android:layout_weight="1"
+	    	android:textColor="@color/white"
+			android:background="@drawable/menu_button_selector"
+			android:drawableLeft="@drawable/download_attach_bg"
+            android:drawablePadding="-15sp"
+             android:paddingLeft="32sp"
+              android:layout_marginRight="-1sp"
+	    />
+	 <Button android:id="@+id/newOpenAttachBtn" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/open_downloaded_attach"
+	        android:visibility="gone"
+	        android:layout_weight="1"
+	       	android:textColor="@color/white"
+			android:background="@drawable/menu_button_selector"
+			android:drawableLeft="@drawable/preview_attach_bg"
+            android:drawablePadding="-15sp"
+            android:paddingLeft="32sp"
+              android:layout_marginRight="-1sp"
+            android:layout_marginLeft="-1sp"
+	        />
+	  <Button
+	      android:id="@+id/openMailBtn"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:text="@string/preview" 
+	      android:layout_weight="1"
+	      android:textColor="@color/white"
+		  android:background="@drawable/menu_button_selector"
+		  android:drawableLeft="@drawable/preview_attach_bg"
+          android:drawablePadding="-15sp"
+          android:paddingLeft="32sp"
+           android:layout_marginLeft="-1sp"
+	      />
+	  </LinearLayout>
+</LinearLayout>

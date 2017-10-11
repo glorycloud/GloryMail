@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+   <TextView
+        android:id="@+id/calendartitle"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="5dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="14dip"
+        android:textColor="@color/white" />
+    <Button
+        android:id="@+id/add_event"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textSize="14dip"
+        android:text="@string/add_event"
+        android:background="@drawable/titlebutton"
+        android:textColor="#FFFFFF"
+        android:padding="3dip"
+	    android:layout_margin="3dip"
+        />
+
+   
+  
+</RelativeLayout>

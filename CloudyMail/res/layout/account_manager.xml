@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:padding="1dp">
+	<ListView android:id="@+id/accountListView"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@color/white" android:layout_weight="1"
+		android:layout_marginBottom="10dp">
+	</ListView>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<Button android:id="@+id/newBtn" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:text="@string/newStr" />
+		<Button android:id="@+id/editBtn" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:text="@string/editStr" />
+		<Button android:id="@+id/deleteBtn" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:text="@string/delete" android:background="@drawable/del_btn"/>
+	</LinearLayout>
+</LinearLayout> 

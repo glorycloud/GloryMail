@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/attachInfoText"  android:background="@drawable/attachitem_bg"
+            android:layout_width="250sp"	android:layout_margin="5dip"
+            android:layout_height="50sp"	
+            android:text="Item"	android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="18sp" >
+        </TextView>
+        <TextView
+            android:id="@+id/attachInfoDate" 
+            android:layout_width="wrap_content"	android:layout_margin="5dip"
+            android:layout_height="wrap_content"	
+            android:text="Item"	android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="14sp" 
+            android:layout_below="@+id/attachInfoText"
+            >
+        </TextView>
+        
+</RelativeLayout>

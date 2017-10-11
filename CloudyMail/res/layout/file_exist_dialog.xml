@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="10dp">
+	<RadioGroup android:id="@+id/fe_fileExistGrp" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	<RadioButton android:id="@+id/fe_cancelDonwloadBtn" android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:text="@string/atta_cancelDownload"></RadioButton>
+		<RadioButton android:id="@+id/fe_overwriteBtn"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/atta_overWrite"></RadioButton>
+		<RadioButton android:id="@+id/fe_saveAsBtn"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/atta_saveAsNewfile"></RadioButton>
+	</RadioGroup>
+	<EditText android:id="@+id/fe_newFileNameTxt" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dp"/>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center">
+	<Button android:id="@+id/fe_okBtn" 
+		android:layout_width="80dp" android:layout_height="50dp"
+		android:gravity="center" android:text="@string/ok"
+		android:padding="10dp"></Button>
+		</LinearLayout>
+</LinearLayout>
+	

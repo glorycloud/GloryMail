@@ -1,0 +1,298 @@
+<html>
+	<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta
+     name="viewport"
+     content="width=100%; 
+             initial-scale=1;
+             maximum-scale=1;
+             minimum-scale=1; 
+             user-scalable=no;"
+    />
+		<title>A test for floating div</title>
+
+<style type="text/css">
+<!--
+.img_box {
+	border: thin solid #000000;
+}
+-->
+</style>		
+
+<script type="text/javascript" >
+function docload(){
+	
+	location='#?$to=liulele@yahoo.com'
+
+}
+
+function showImage(ele,cid)
+{
+	ele.parentNode.innerHTML="<img src=\"GetMailPart?uid=22&cid=" 
+			+  cid 
+			+ "\">";
+	return false;
+	
+}
+
+</script>
+<style>
+		* {
+    font-size: 14px;
+	}
+
+.conversationHeaderDiv {
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 15px;
+}
+		
+		.headerDivStyle {
+		    position: relative;
+		   margin-top: -10px;
+		   
+		    border-width: 15 8 12 8;
+		    -webkit-border-image:
+		        url("android_res/ic_email_thread_open_top_default.9.png") 15
+		        8 8 8;
+			z-index: 5
+		}
+		
+		.presenceBgImg {
+		    background: url("android_res/quickcontact_presence_bg.png") no-repeat;
+		    vertical-align: bottom;
+		    padding-right: 5px;
+		    position: relative;
+		    padding-bottom: 2px;
+		    width: 18px;
+		    z-index: 1
+		}
+		.presenceImg {
+		    vertical-align: bottom;
+		    width: 18px;
+		    z-index: 3
+		}
+		
+		.fromDiv {
+		    font-size: 16px;
+		    text-overflow: ellipsis;
+		    overflow: hidden;
+		    font-weight: bold;
+		    white-space: nowrap;
+		}
+		
+		.namedCss {
+		float:top;
+		width:150px;
+		height:25px;
+		background:#00eeff;
+		}
+		
+		.bodyCell {
+		position: relative;
+    	border-right: thin solid #999999;
+    	z-index: 3
+    	
+		}
+		.fromDiv {
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+.addressDiv {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 1.2em;
+  line-height: 1em;
+  width: 90%;
+  overflow: hidden;
+}
+
+.messageFooterDiv2 {
+	position:absolute;
+	top:0px;
+	right:0px;
+    -webkit-border-image: url("android_res/bg_shadow_bottomcard.9.png") 0 5 0 4 / 0 5 0 4;
+
+}
+.footerTextElementDiv {
+    display: inline;
+    font-size:12px;
+    color:#666666;
+}
+button.footerButton {
+    float:left;
+			border-style:solid;
+			border-width:1px;
+	border-color:transparent;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-right:2px;
+    padding-left:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-right:0px;
+    margin-left:0px;
+    background-color: transparent;
+}
+.footerIconImg {
+    width: 32px;
+    height: 32px;
+    vertical-align:-20%;
+}
+
+.buttonCell{
+		    background: url("android_res/button_bg.png");
+			background-repeat:repeat-x;
+			border-style:solid;
+			border-width:2px;
+	}
+	
+.buttonTd{
+    float:left;
+			border-style:solid;
+			border-width:1px;
+	border-color:black;
+    padding:0px;
+  
+    margin:0px;
+   
+		   
+	}
+
+		</style>
+   <script> 
+
+    var sticked = false;
+    function scrollHandler () {
+  
+    	
+    	
+        var top = headerDiv.offsetTop;
+        var scrolls = body.scrollTop;
+        
+            
+            if (!sticked && scrolls > top ) {
+            	headerDiv.style.position="fixed";
+                headerDiv.style.top="0";
+                headerDiv.style.marginRight="8px"; //unknow reason for a bug, I have to correct the margin
+                bodyCell.style.marginTop=headerDiv.scrollHeight;
+                sticked = true;
+            }else if(sticked && scrolls < subjectDiv.scrollHeight) {
+               //headerDiv.style.position="absolute";    
+               headerDiv.style.position="relative";
+               headerDiv.style.marginRight="0px";
+               bodyCell.style.marginTop="0";
+               sticked = false;
+            }
+       
+                      
+   
+	}
+
+   </script> 
+
+	</head>
+	<body onscroll="scrollHandler()" id="body" >
+		<div class="conversationHeaderDiv" id="subjectDiv">
+			<p>This is the subject area,</p>
+		</div>
+		<div class="headerDivStyle" id="headerDiv" >
+			<table cellpadding="0" cellspacing="0"><tr>
+				<td>
+					<div class="presenceBgImg" onClick="contactSender(this, '%s', '%s')" > <!-- contact sender is for GTalk integration-->
+						<div><img class="presenceImg" name="%s" src="presence_invisible.png"></div>
+					</div>
+				</td>
+				<td align='left' width='100%' onClick="toggleHeader('%s')">
+					<div class="fromDiv" > <span style="color:#990000" >Daniel Liu </span></div> <div class="addressDiv"><span style="color:#999999">dliu@cloudymail.mobi</span></div>
+				</td>
+				<!--
+				<td height="100%">
+				</td>
+				-->
+			</tr></table>
+			<div class="messageFooterDiv2" >
+				<table cellpadding="0" cellspacing="0"  class="buttonCell">
+					<tr align='right' >
+						<td class="buttonTd">
+							<button class="footerButton" onClick="window.gmail.reply('the_uid')"><img src="android_res/reply.png" class="footerIconImg"></button>
+					  	</td>
+					  	<td class="buttonTd">
+							<button class="footerButton" onClick="window.gmail.replyAll('the_uid')"><img src="android_res/replyAll.png" class="footerIconImg"></button>				
+						</td>
+						<td class="buttonTd">
+							<button class="footerButton" onClick="window.gmail.forward('the_uid')"><img class="footerIconImg" src="android_res/forward.png"></button>										
+						</td>
+					</tr>
+			  </table>
+			</div>		
+		</div>
+		<div class="bodyCell" id="bodyCell">
+		<br>line 01</br>
+		<br>line 02</br>
+		<br>line 03</br>
+		<br>line 04</br>
+		<br>line 05</br>
+		<br>line 06</br>
+		<br>line 07</br>
+		<br>line 08</br>
+		<br>line 09</br>
+		<br>line 10</br>
+		<br>line 11</br>
+		<br>line 12</br>
+		<br>line 13</br>
+		<br>line 14</br>
+		<br>line 15</br>
+		<br>line 16</br>
+		<br>line 17</br>
+		<br>line 18</br>
+		<br>line 19</br>
+		<br>line 20</br>
+		<br>line 21</br>
+		<br>line 22</br>
+		<br>line 23</br>
+		<br>line 24</br>
+		<br>line 25</br>
+		<br>line 26</br>
+		<br>line 27</br>
+		<br>line 28</br>
+		<br>line 29</br>
+		<br>line 30</br>
+		<br>line 31</br>
+		<br>line 32</br>
+		<br>line 33</br>
+		<br>line 34</br>
+		<br>line 35</br>
+		<br>line 36</br>
+		<br>line 37</br>
+		<br>line 38</br>
+		<br>line 39</br>
+		<br>line 40</br>
+		<br>line 41</br>
+		<br>line 42</br>
+		<br>line 43</br>
+		<br>line 44</br>
+		<br>line 45</br>
+		<br>line 46</br>
+		<br>line 47</br>
+		<br>line 48</br>
+		<br>line 49</br>
+		<br>line 50</br>
+		<br>line 51</br>
+		<br>line 52</br>
+		<br>line 53</br>
+		<br>line 54</br>
+		<br>line 55</br>
+		<br>line 56</br>
+		</div>
+	</body>
+</html>

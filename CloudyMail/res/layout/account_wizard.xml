@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/widget_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/pageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:id="@+id/page1ButtonBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:text="@string/cancel"
+                android:textColor="@drawable/button_color" />
+
+            <Button
+                android:id="@+id/nextBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:text="@string/next"
+                android:textColor="@drawable/button_color" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/page1ButtonBar"
+            android:layout_alignParentTop="true"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/wizardPage1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <!-- android:layout_alignParentBottom="true" -->
+
+                <TextView
+                    android:id="@+id/Text1"
+                    style="@style/normalText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info_accountWizardWelcome" >
+                </TextView>
+
+                <TableLayout
+                    android:id="@+id/accountSettingLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    android:visibility="visible" >
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/Lbl1"
+                            style="@style/normalText"
+                            android:text="@string/mailbox" />
+
+                        <EditText
+                            android:id="@+id/mailboxTxt"
+                            android:inputType="textEmailAddress" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/Lbl2"
+                            style="@style/normalText"
+                            android:text="@string/password" />
+
+                        <EditText
+                            android:id="@+id/passwordTxt"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:inputType="textPassword"
+                            android:password="true" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <CheckBox
+                            android:id="@+id/showPasswordChk"
+                            style="@style/normalText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_span="2"
+                            android:text="@string/showPasswordInClear" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pageView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/page2ButtonBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <Button
+                android:id="@+id/lastBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:text="@string/prev"
+                android:textColor="@drawable/button_color" />
+
+            <Button
+                android:id="@+id/finishBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:text="@string/finish"
+                android:textColor="@drawable/button_color" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/page2ButtonBar" >
+
+            <LinearLayout
+                android:id="@+id/wizardPage2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <LinearLayout
+                    android:id="@+id/advancedSettingLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/step2PromptLbl"
+                        style="@style/normalText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info_findServerSetting" />
+
+                    <Button
+                        android:id="@+id/advancedBtn"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/button_bg"
+                        android:text="@string/advance"
+                        android:textColor="@drawable/button_color" />
+                </LinearLayout>
+
+                <TableLayout
+                    android:id="@+id/accountSettingLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    android:visibility="gone" >
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/accountTypeLbl"
+                            style="@style/normalText"
+                            android:text="@string/serverType" />
+
+                        <Spinner
+                            android:id="@+id/serverTypeCmb"
+                            android:background="@drawable/spinner_sytle_serverset_bg"
+                            android:entries="@array/serverType"
+                            android:prompt="@string/serverType" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/mailServerLbl"
+                            style="@style/normalText"
+                            android:text="@string/pop3Server" />
+
+                        <EditText android:id="@+id/mailServerTxt" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/mailPortLbl"
+                            style="@style/normalText"
+                            android:text="@string/pop3Port" />
+
+                        <EditText
+                            android:id="@+id/mailPortTxt"
+                            android:inputType="number" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/smtpServerLbl"
+                            style="@style/normalText"
+                            android:text="@string/smtpServer" />
+
+                        <EditText android:id="@+id/smtpServerTxt" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/smtpPortLbl"
+                            style="@style/normalText"
+                            android:text="@string/smtpPort" />
+
+                        <EditText
+                            android:id="@+id/smtpPortTxt"
+                            android:inputType="number" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/normalText"
+                            android:text="@string/accountName" />
+
+                        <EditText android:id="@+id/loginNameTxt" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <CheckBox
+                            android:id="@+id/useSSLChk"
+                            style="@style/normalText"
+                            android:layout_span="2"
+                            android:text="@string/useSSL" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

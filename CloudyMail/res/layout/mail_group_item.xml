@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+	android:background="@color/white"
+    android:id="@+id/mailGroupItem"
+    >
+    
+<RelativeLayout  android:layout_width="wrap_content" android:layout_height="fill_parent">
+ 
+   <TextView
+       android:id="@+id/expand_mark_group"
+       android:layout_width="3dp"
+       android:layout_height="fill_parent"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:background="#FFFF00"
+       android:visibility="gone"
+       />
+   <!-- android:paddingRight="6dp"
+	        android:gravity="left" -->
+   <ImageView 
+        android:id="@+id/mailGroupImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="500dip"
+        android:maxHeight="500dip"
+        android:paddingLeft="7dip"
+        android:gravity="center_vertical"
+		android:layout_centerVertical="true"
+        />
+     <!--android:icon="@android:drawable/expander_ic_maximized"
+               android:layout_gravity="right|center_vertical"
+     -->
+	<TextView android:id="@+id/groupDateTxt"
+			android:text="2011年2月12日 1:38"  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"  
+			android:layout_alignParentRight="true" 
+			android:gravity="right"
+			android:paddingRight="6dp"
+			android:paddingLeft="8dp"
+			
+			android:textColor="@color/gray"></TextView>
+		
+	<TextView android:id="@+id/groupFromTxt" 
+			android:text="dliu@glorycloud.com.cn"  
+			android:ellipsize="end"
+			android:singleLine="true"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+ 			android:layout_toRightOf="@id/mailGroupImage"
+			android:layout_toLeftOf="@id/groupDateTxt"
+			android:gravity="left"
+			android:paddingLeft="7dp"
+			android:textSize="14sp"
+			android:textColor="@color/gray"></TextView>
+	
+	<TextView android:id="@+id/groupSubjectTxt" 
+			android:text="有朋自远方来"  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_below="@id/groupDateTxt"
+		    android:paddingTop="6dp"
+			android:textColor="@color/text_color"
+            android:layout_toRightOf="@id/mailGroupImage"
+		    android:ellipsize="end"
+		    android:paddingLeft="7dp"
+			android:textSize="18sp"
+			android:maxLines="2"
+			android:paddingBottom="6dp"
+			></TextView>
+	
+</RelativeLayout>
+    <!-- android:layout_gravity="right" -->
+
+</LinearLayout>

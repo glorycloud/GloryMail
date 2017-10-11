@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"	android:id="@+id/relate"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/run_image"
+            android:layout_width="1280dip"
+            android:layout_height="fill_parent"
+            android:scaleType="matrix"
+            android:src="@drawable/splash"
+             />
+             <!-- android:src="@drawable/default_homebg" -->
+    </LinearLayout>
+
+    <mobi.cloudymail.mailclient.ScrollLayout
+        android:id="@+id/views"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="40dip" 
+        android:layout_marginBottom="180dip"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" 
+        android:layout_margin="20dip"
+        >
+	
+        <TextView
+            android:id="@+id/tv_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="1"	
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/pageid" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"	
+            android:orientation="vertical"
+            android:layout_alignBaseline="@id/views"	
+            >
+            <ImageButton 
+            android:id="@+id/goneBtn"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"	
+            android:layout_marginBottom="18dip"
+            android:background="@drawable/icon_download"
+            />
+            <ImageButton 
+            android:id="@+id/downAttachManBtn"
+            android:src="@anim/grid_light"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"	
+            android:focusable="false"
+			android:focusableInTouchMode="false"
+			 android:visibility="gone"
+            android:background="@drawable/icon_download"
+            />
+		    <!--  android:layout_marginBottom="18dip" -->
+            <ImageButton
+                android:id="@+id/preViewManBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                 android:visibility="gone"
+				android:focusableInTouchMode="false"
+                android:background="@drawable/icon_fav" />
+		
+            <ImageButton
+                android:id="@+id/openMailManBtn"
+                android:focusable="false"
+				android:focusableInTouchMode="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@drawable/icon_home"
+                 />
+            <ImageButton
+                android:id="@+id/reDownloadManBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+				android:focusableInTouchMode="false"
+				android:visibility="gone"
+                android:background="@drawable/icon_t_chuangyi" />
+            <ImageButton
+                android:id="@+id/lacalOpenManBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+				android:focusableInTouchMode="false"
+				android:visibility="gone"
+                android:background="@drawable/icon_t_meinv" />
+           
+</LinearLayout>
+    </RelativeLayout>
+
+		<ImageView android:id="@+id/dels"	android:layout_height="wrap_content"	android:layout_width="wrap_content"
+	     	android:visibility="gone"
+	    android:layout_alignParentBottom="true"	android:layout_centerHorizontal="true"
+	    />
+	<mobi.cloudymail.mailclient.CoverFlow android:id="@+id/coverflow"
+		android:layout_width="fill_parent" android:layout_height="200sp" 
+		android:layout_alignParentBottom="true"
+		/>
+
+	
+</RelativeLayout>
+<!-- <RelativeLayout android:id="@+id/body"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:graive="bottom">
+	</RelativeLayout>
+	 -->

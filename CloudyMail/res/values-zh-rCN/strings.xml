@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appName">彩云邮件</string>
+	<string name="serverType">服务器类型：</string>
+	<string name="pop3">pop3</string>
+	<string name="imap">imap</string>
+	<string name="exchange">exchange</string>
+	<string-array name="serverType">
+		<item>@string/pop3</item>
+		<item>@string/imap</item>
+		<item>@string/exchange</item>
+	</string-array>
+	<string name="finish">完成</string>
+	<string name="next">下一步</string>
+	<string name="prev">上一步</string>
+	<string name="advance">高级...</string>
+	<string name="accountTab">账户名</string>
+	<string name="mailServerTab">服务器设置</string>
+	<string name="newStr">新建...</string>
+	<string name="editStr">编辑...</string>
+	<string name="delete">删除</string>
+	<string name="deleteForever">永久删除</string>
+	<string name="addStr">添加</string>
+	<string name="preview">打开邮件</string>
+	<string name="download">下载</string>
+	<string name="receiveMail">收邮件</string>
+	<string name="receivingMail">接收邮件......</string>
+	<string name="writeMail">写邮件</string>
+	<string name="account">账号</string>
+	<string name="previewInfo">暂不支持预览此格式文件</string>
+	<string name="previewTitle">提示</string>
+	<string name="accountManager">账号管理</string>
+	<string name="click_to_show_more_mail">点击显示更多邮件...</string>
+	<string name="noNewMail">没有最新邮件</string>
+	<string name="calendar_menu">日历</string>
+	<string name="atta_exist">已存在</string>
+	<string name="addressBook">地址本</string>
+	<string name="search">搜索</string>
+	<string name="setting">设置</string>
+	<string name="about">关于</string>
+	<string name="folder">文件夹</string>
+	
+	
+	<string name="ab_name">名字</string>
+	<string name="ab_address">邮箱地址</string>
+	<string name="ab_empty_name">名字不能为空</string>
+	
+	<string name="err_emptyAddress">邮箱地址不能为空</string>
+	<string name="err_emptyPassword">邮箱密码不能为空</string>
+	<string name="error">错误</string>
+	<string name="err_invalidAddress">邮件地址无效，请检查输入</string>
+	<string name="err_invalidLoginName">用户名无效，请检查输入</string>
+	<string name="err_invalidServerAddress">服务器地址无效，请检查输入</string>
+	<string name="err_invalidServerPort">服务器端口无效，请检查输入</string>
+	<string name="err_invalidSmtpServer">SMTP服务器地址无效，请检查输入</string>
+	<string name="err_invalidSmtpPort">SMTP服务器端口无效，请检查输入</string>
+	
+	<string name="pop3Port">POP3端口: </string>
+	<string name="pop3Server">POP3服务器: </string>
+	<string name="imapPort">IMAP端口: </string>
+	<string name="imapServer">IMAP服务器: </string>
+	<string name="exchangeServer">服务器地址: </string>
+	<string name="exchangePort">Exchange端口: </string>
+	<string name="smtpPort">SMTP端口: </string>
+	<string name="smtpServer">SMTP服务器: </string>
+	<string name="accountName">用户名: </string>
+	<string name="useSSL">使用SSL连接</string>
+	
+	<string name="info_findServerSetting">很高兴，我们找到了您的邮件服务器配置。请点击\"完成\"结束本次配置过程，开始使用该账号。\n
+或者您也可以点击\"高级\"按钮，对设置进行修改。</string>
+	<string name="info_accountWizardWelcome">本向导将帮助您完成邮箱的配置。\n请在下面的输入框中输入你的邮箱地址，比如:\n
+yourname\@yourserver.com 然后点击\"下一步\"按钮</string> 
+    <string name="PromptForPOPIMAP">您的帐户可能需要使用pop3或者imap协议，才能接收邮件，该选项一般可以通过网页登录服务器设置!</string>
+    <string name="PromptAccountSetting">帐号设置</string>
+    
+    
+	<string name="deleteAccountTitle">删除账号</string>
+	<string name="deleteAccountQuery">你确定要删除账号 \"%1$s\" 吗？</string>
+	<string name="delAccountFailed">删除账号失败，%1$s</string>
+	<string name="addAccountFailed">添加账号失败，%1$s</string>
+	<string name="updateAccountFailed">更新账号失败，%1$s</string>
+	<string name="err_accountExist">账户已经存在。</string>
+	<string name="err_oldAccountNotExist">老账号 \"%1$s\" 不存在。</string>
+	
+	<string name="reply">回复</string>
+	<string name="replyAll">回复全部</string>
+	<string name="forward">转发</string>
+	<string name="attachment">附件</string>
+	<string name="cancel">取消</string>
+	
+	<string name="ok">确定</string>
+	<string name="yes">是</string>
+	<string name="no">否</string>
+	
+	<string name="exit">退出程序</string>
+	<string name="exitQuestion">你真的要退出彩云邮件吗？</string>
+	<string name="networkProblem">网络错误，无法连接到服务器。</string>
+	<string name="logining">正在登录......</string>
+	<string name="failLogin">登录失败</string>
+	<string name="fl_checkSetting">请检查邮箱设置和密码是否正确。</string>
+	<string name="fl_cannotConnectServer">无法连接服务器，请稍候重试。</string>
+	<string name="internal_error">内部错误！</string>	
+	
+	<string name="atta_cancelDownload">取消下载</string>
+	<string name="atta_overWrite">覆盖文件</string>
+	<string name="atta_saveAsNewfile">附件另存为：</string>
+	
+	<string name="atta_sdcardNotAvailable">SD卡不可用。</string>
+	<string name="atta_sdcardTitle">提示信息</string>
+	<string name="atta_sdcardReadOnly">SD卡不可写。</string>
+	<string name="atta_fileexists">文件存在</string>
+	<string name="atta_fileSaved">文件已经保存到:</string>
+	<string name="atta_import">已经成功导入！</string>
+	<string name="atta_downloading">下载中...</string>
+	<string name="atta_fileNameEmpty">文件名为空。</string>
+	<string name="atta_file_Mode">文件</string>
+	<string name="atta_Photo_Mode">拍照</string>
+	<string name="atta_Record_Mode">录音</string>
+	<string name="atta_Choose_Mode">请选择附件类型</string>
+	
+	<string name="cp_addresser">发件人：</string>
+	<string name="cp_to">收件人：</string>
+	<string name="cp_cc">抄送：</string>
+    <string name="cp_bcc">密送:</string>
+    <string name="cp_contentHint">邮件内容</string>
+	<string name="cp_sendTime">发送时间:</string>
+	<string name="cp_addRef">引用原邮件</string>
+	<string name="cp_respondInline">内嵌回复</string>
+	<string name="cp_resaddAttachment">添加附件</string>
+	<string name="cp_includeAttachment">转发时包含附件</string>
+	<string name="cp_sendMail">发送</string>
+	<string name="cp_saveMail">存草稿</string>
+	<string name="cp_subject">标题：</string>
+	<string name="cp_selectToAddr">选择收件人</string>
+	<string name="cp_selectCcAddr">选择抄送人</string>
+	<string name="cp_selectBccAddr">选择密送人</string>
+	<string name="cp_specifyAddr">收件人和抄送人不能全为空</string>
+	<string name="cp_invalidAddr">邮箱地址格式错误:</string>
+	<string name="cp_emptySubjectMsg">邮件标题为空，继续发送吗？</string>
+	<string name="cp_whetherAddAddressBook">地址本为空，是否立即添加?</string>
+	<string name="cp_immediatelyAdd">立即添加</string>
+	<string name="cp_laterSay">稍后再说</string>
+	<string name="cp_isSaveDrafts">是否保存草稿?</string>
+	<string name="cp_saveAndExit">保存后退出</string>
+	<string name="cp_ReturnTo">按错了返回</string>
+	
+	<string name="cp_emptySubject">邮件标题空</string>
+	<string name="cp_discardMail">确认放弃</string>
+	<string name="cp_discardMailMsg">邮件尚未发送，真的放弃吗？</string>
+	<string name="cp_sendingMail">正在发送 ...</string>
+	<string name="cp_sendSuccess">发送成功。</string>
+	<string name="cp_sendFailure">发送失败：</string>
+	<string name="cp_saveMailSuccess">成功保存到发件箱</string>
+	<string name="cp_saveMailFail">保存草稿失败：</string>
+	<string name="inbox">收件箱</string>
+	
+	<string name="openingMail">正在打开邮件 ...</string>
+	<string name="openingAttachment">正在打开附件 ...</string>
+	
+	<string name="op_markRead">标记已读</string>
+	<string name="op_markUnread">标记未读</string>
+	<string name="op_recoverMail">恢复</string>
+	<string name="op_selectAll">全选</string>
+	<string name="op_disselectAll">取消全选</string>
+	<string name="op_moveMail">移动</string>
+	
+	
+	<string name="err_notConnected">无网络连接</string>
+	
+	<string name="setting_inout">收发设置</string>
+	<string name="setting_open">开启</string>
+	<string name="setting_close">关闭</string>
+	<string name="setting_multipage_mail">邮件分页显示</string>
+	<string name="setting_mail_number">每次最大收取邮件数目</string>
+	<string-array name="setting_mailcount_array">
+		<item>10封</item>
+		<item>20封</item>
+		<item>30封</item>
+	</string-array>
+	<string-array name="setting_mailcount_values">
+		<item>10</item>
+		<item>20</item>
+		<item>30</item>
+	</string-array>
+	 <string name="character_signature">来自我的彩云邮</string>
+    <string name="string_character_title">个性签名</string>
+    <string name="automatic_signature">来自我的彩云邮</string>
+    <string name="confirm_button">确定</string>
+    <string name="cancel_button">取消</string>
+    
+	<string name="setting_sync">通知</string>
+	<string name="setting_sync_frequency">收取频率</string>
+	<string-array name="setting_sync_frequency_array">
+		<item>从不</item>
+		<item>5分钟</item>
+		<item>10分钟</item>
+		<item>半小时</item>
+		<item>1小时</item>
+		<item>4小时</item>
+	</string-array>
+	<string-array name="setting_sync_frequency_values">
+		<item>-1</item>
+		<item>5</item>
+		<item>10</item>
+		<item>30</item>
+		<item>60</item>
+		<item>240</item>
+	</string-array>
+	<string name="setting_new_mail_led">收到新邮件时指示灯闪烁</string>
+	<string name="setting_new_mail_vibrate">收到新邮件时振动</string>
+	<!--<string name="setting_new_mail_ringtone">铃声选择</string>  -->
+	<string name="setting_new_mail_sond">收到新邮件时声音通知</string>
+	
+	<string name="string_clearhistory_title">清除搜索历史记录</string>
+	<string name="click_clear_hostoryId">点击后将清空浮动搜索历史记录</string>
+	<string name="click_clear_posswordId">点击后将清除登录密码</string>
+	<string name="click_clear_cacheId">点击后将清空已缓存的邮件</string>
+	
+	<string name="string_clear_password_title">清除登录密码</string>
+	<string name="stirng_confirm_clear_password">您确定要清除登录密码？</string>
+	<string name="stirng_confirm_clear">确定</string>
+	<string name="stirng_cancel_clear">取消</string>
+	
+	
+	<string name="string_clear_cache_title">清除缓存</string>
+	<string name="string_clear_cache">清除缓存</string>
+	<string name="string_confirm_clear_cache">您确定要清除已缓存的邮件?</string>
+	<string name="setting_mutetime">静音时段</string>
+	<string name="silent">静音</string>
+	
+	    
+	<string name="key_clear_history">key_clear_history</string>
+	
+	<string name="key_new_mail_led">key_new_mail_led</string>
+	<string name="key_new_mail_vibrate">key_new_mail_vibrate</string>
+	<string name="key_new_mail_sond">key_new_mail_sond</string>
+	<!--<string name="key_new_mail_ringtone">key_new_mail_ringtone</string>  -->
+	<string name="key_sync_frequency">key_sync_frequency</string>
+	<string name="key_mail_number">key_mail_number</string>
+	<string name="key_mail_signature">key_mail_signature</string>
+	<string name="key_server_address">key_server_address</string>
+	<string name="key_clear_password">key_clear_password</string>
+    <string name="key_clear_cache">key_clear_cache</string>
+    <string name="key_mute_time">key_mute_time</string>
+    
+    	
+	<string name="string_serverAdd_title">服务器地址</string>
+
+	
+	
+	<string name="update_software">软件更新</string>
+	<string name="err_get_latest_version">无法获取最新版本号!</string>
+	<string name="about_title">关于彩云邮件</string>
+	<string name="about_version">1.4.3</string>
+	<string name="about_copyright">\u00a9 2013 北京彩云荣光软件有限公司  All rights reserved\n
+支持:support@glorycloud.com.cn</string>
+
+	<string name="no_need_update_str">当前版本:%1$s 已是最新版本，无需更新。</string>
+	<string name="whether_update_str">当前版本:%1$s ，\n\n发现新版本:%2$s \n\n新功能：\n%3$s\n\n是否更新？</string>
+	<string name="update_downloading">正在下载</string>
+	<string name="update_wait">请稍候......</string>
+	<string name="err_update_failed">软件更新失败：</string>
+    <string name="sort">排序</string>
+    <string name="sort_date">日期</string>
+    <string name="sort_subject">主题</string>
+    <string name="sort_from">发件人</string>
+    <string name="sort_readstate">阅读状态</string>
+    <string name="sort_asterisk">星标</string>
+    
+    <string name="ntf_new_mail_name">新邮件</string>
+    <string name="ntf_new_mail_title">您有%1$d封新邮件</string>
+    
+    <string name="Mail_total">邮件总封数</string>
+	<string name="unRead_count">未读封数</string>
+	
+	
+	<string name="folder_global">全局收件箱</string>
+	<string name="folder_inbox">收件箱</string>
+	<string name="folder_notsentbox">发件箱</string>
+	<string name="folder_sentbox">已发送</string>
+	<string name="folder_draft">草稿箱</string>
+	<string name="folder_delete">已删除</string>
+	<string name="folder_write">发件箱</string>
+	
+	<string name="snapshot">拍照</string> <!--  not used -->
+	<string name="Camer">拍照</string><!--  not used -->
+
+     <string name="search_invoke">请讲出要搜索的内容</string>
+    <string name="searchMail">搜索</string><!--  not used -->
+    <string name="searchMenu">查询</string>
+    <string name="searchLabel">查询</string>
+    <string name="searchprompt">搜索</string>
+    <string name="searchHint">请输入查询内容</string>
+    
+    <string name="mailbox">邮箱：</string>
+    <string name="password">密码：</string>
+    <string name="sendMail">发送</string>
+    <string name="addCcMail">添加抄送/密送</string>
+	<string name="addAttacmentMail">添加附件</string>
+	<string name="cancleMail">取消</string>
+	
+    <string name="replyMail">回复</string>
+    <string name="dseleteMail">删除</string>
+    <string name="inSending">发送中...</string>
+	<string name="search_mail_config">查找服务器配置...</string>
+	<string name="fail_to_get_mail_config">无法获得服务器配置，请手工配置。</string>
+	<string name="fail_to_get_attach">获取附件信息失败</string>
+	<string name="fetech_attach">获得附件列表...</string>
+	<string name="whether_syncup_mail_immediately">您的邮件账号设置成功，是否立刻收邮件？</string>
+	<string name="whether_syncup_mail_immediately_title">是否立刻收邮件?</string>
+	<string name="wait_sending">云邮正在为您发送邮件,请稍后...</string>
+	<string name="no_account_and_ask_to_create">您还没有设置任何邮件账号，是否现在设置？</string>
+	<string name="whether_setup_account">是否设置账号</string>
+	
+	<string name="feedback_account">用户反馈</string>
+	<string name="feedback_msg">非常感谢您的反馈，我们会听取您的意见，并把产品做的更好。</string>
+	<string name="feedback_msg_title">云邮用户反馈</string>
+	<string name="feedback_software_version">软件版本:</string>
+	<string name="feedback_sdk_version ">系统版本:</string>
+	<string name="feedback_phone_Model">手机型号:</string>
+	<string name="feedback_network_type">网络类型:</string>
+	<string name="feedback_language_Environment">语言环境:</string>
+	<string name="feedback_my_recommend">我的建议:</string>
+	<string name="no_network_connection">无网络连接</string>
+	<string name="stop">取消接收</string>
+	
+    <string name="attachManager">附件管理</string>
+    <string name="draft">(草稿)</string>
+    <string name="open_downloaded_attach">查看</string>
+    <string name="pull_to_refresh_pull_label">下拉以刷新</string>
+    <string name="pull_to_refresh_release_label">松开以刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新中...</string>
+    <string name="pull_to_refresh_tap_label">点击刷新</string>
+    <string name="add_account_titleRight">添加帐户</string>
+    
+    <string name="email_assistant">帐号</string>
+    <string name="write_email">写邮件</string>    <string name="address_book">地址簿</string>
+    <string name="email_settings">邮箱设置</string>
+    <string name="account_setting">帐户设置</string>
+    <string name="attachment_manager">附件管理</string>
+    <string name="accountWizard_Warn">邮箱类型已改变，该账户的本地数据将会被清除！</string>
+    <string name="warning">警告!</string>
+        
+    	<string name="hello">Hello World, Main</string>
+	<string name="recordremind_name">记录信息</string>
+   
+	 <string name="mms">是否使用彩信发送此邮件?</string>
+	<string name="mms_info">提示</string>
+	<string name="setting_info">提示</string>
+	<string name="open_setting">是否立即启用移动网络数据访问功能?</string>
+    <!-- 用于日历 -->
+	<string name="app_name">万年历</string>
+	<string name="today">今天</string>
+	<string name="assign_date">指定日期</string>
+	<string name="check_event">查看事件</string>
+	<string-array name="week_name">
+		<item>周日</item>
+		<item>周一</item>
+		<item>周二</item>
+		<item>周三</item>
+		<item>周四</item>
+		<item>周五</item>
+		<item>周六</item>
+	</string-array>
+	<string-array name="month_name">
+		<item>一月</item>
+		<item>二月</item>
+		<item>三月</item>
+		<item>四月</item>
+		<item>五月</item>
+		<item>六月</item>
+		<item>七月</item>
+		<item>八月</item>
+		<item>九月</item>
+		<item>十月</item>
+		<item>十一月</item>
+		<item>十二月</item>
+	</string-array>
+	<string name="addEventBtn">添加事件</string>	<string name="delEventBtn">删除事件</string>
+	<string name="sendEventBtn">发送事件</string>
+	<string name="showPasswordInClear">明文显示密码</string>
+	<string name="rememberPassword">记住密码</string>
+	<string name="already_first_mail">这已经是第一封邮件了。</string>
+	<string name="already_last_mail">这已经是最后一封邮件了。</string>
+	<string name="add_event">添加事件</string>
+	<string name="exitprogram">再按一次退出程序</string>
+	<string name="exitpreview">再按一次退出预览</string>
+	 <string name="intoBtn">点击进入</string>
+	 
+	 <string name="choosePage">请选择页码</string>
+	 <string name="already_first_page">这已经是第一页了。</string>
+	 <string name ="already_last_page" >这已经是最后一页了。</string>
+	 <string name ="timeout" >加载超时。这种情况在网络不好，或者加载很大的邮件时会发生。请等待一小会儿后重新打开.</string>
+	 <string name ="timeout_title" >加载超时</string>
+	 <string name ="failedDownloadAttach" >下载附件失败</string>
+	 <string name ="reinputPassword">密码错误!  请重输以下邮箱的密码\n
+</string>
+	<string name ="inputPassword">请输入下面邮箱的密码\n
+</string>
+	<string name ="noSimCard">找不到sim卡</string>
+	<string name ="newAccount">添加帐户</string>
+	<string name ="content">内容:</string>
+</resources>
