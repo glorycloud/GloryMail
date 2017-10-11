@@ -1,0 +1,237 @@
+* {
+    font-size: 14px;
+}
+.img_box {
+	border: thin solid #000000;
+}
+
+.conversationHeaderDiv {
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 15px;
+}
+
+.highlight{
+ border: 1px solid red;
+}
+			
+		.headerDivStyle {
+			position: relative;
+			margin-top: -10px;
+			
+			padding-bottom: 8px;
+			border-width: 15 8 0 8;
+			-webkit-border-image: url("ic_email_thread_open_top_default.9.png") 15 8 8 8;
+			
+			z-index: 10
+		}
+		.headerDivStyle3 {
+			/*position: relative;*/
+			margin-top: 0px;
+			padding-bottom: 0px;
+			border-width: 0 0 0 0;
+			/*-webkit-border-image: url("header_bk.png") 15 8 8 8;*/
+			background-color: #efefef;
+			z-index: 1
+		}
+		.folderDivStyel{
+		  	background-color: #dddddd;
+		  	border:1 solid #777777;
+		  	border-radius:3;
+			width:50
+		}
+		.recvDivStyle{
+			
+			top:-5px;
+			
+			margin-right:0px;
+		     z-index: 1;
+		}
+		/*.recvDivStyle:focus{
+			
+			top:-5px;
+			-webkit-border-image: url("ic_email_thread_open_top_default.9.png") 15 8 8 8;
+			margin-right:0px;
+		     z-index: 4;
+		}*/
+		.bodyStyle{
+			left:0px;	
+			right:0px;	
+			margin:0 0 0 0;
+		}
+		.presenceBgImg {
+		   /* background: url("quickcontact_presence_bg.png") no-repeat; */
+		    vertical-align: bottom;
+		    padding-right: 5px;
+		    margin-right:5px;
+		    position: relative;
+		    padding-bottom: 2px;
+		    width: 18px;
+		    z-index: 1
+		}
+		.presenceImg {
+		    vertical-align: bottom;
+		    width: 18px;
+		    z-index: 1
+		}
+		
+		.fromDiv {
+		    font-size: 16px;
+		    text-overflow: ellipsis;
+		    overflow: hidden;
+		    font-weight: bold;
+		    white-space: pre-wrap;
+		}
+		
+		.namedCss {
+		float:top;
+		width:150px;
+		height:25px;
+		background:#00eeff;
+		}
+		
+		.bodyCell {
+		position: relative;
+		margin-right:0px
+    	border-right: thin solid #999999;
+    	z-index: 1
+    	
+		}
+		.fromDiv {
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+.addressDiv {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 1.2em;
+  line-height: 1em;
+  width: 90%;
+  overflow: hidden;
+}
+
+.messageFooterDiv2 {
+	position:absolute;
+	margin-top: -5px;
+	
+	top:0px;
+	right:-8px;
+   /* -webkit-border-image: url("bg_shadow_bottomcard.png") 0 5 0 4 / 0 5 0 4; */
+
+}
+.footerTextElementDiv {
+    display: inline;
+    font-size:12px;
+    color:#666666;
+}
+
+button.footerButton {
+    float:left;
+	border:1 solid transparent;
+			
+    padding:0px;
+   
+    margin:0px;
+  	height:40px;
+    background-color: transparent;
+}
+button.attachButton {
+   selectedDownSkin: Embed(source=¡±button_up_bg.png¡±,
+   scaleGridTop=5,
+   scaleGridBottom=10,
+   scaleGridLeif=5,
+   scaleGridRight=10
+   );
+   DownSkin: Embed(source=¡±button_up_bg.png¡±,
+   scaleGridTop=5,
+   scaleGridBottom=10,
+   scaleGridLeif=5,
+   scaleGridRight=10
+   );
+  upSkin: Embed(source=¡±button_up.png¡±,     
+   scaleGridTop=5,
+   scaleGridBottom=10,
+   scaleGridLeif=5,
+   scaleGridRight=10
+);
+   selectedUpSkin: Embed(source=¡±button_bg.png¡±,
+   scaleGridTop=5,
+   scaleGridBottom=10,
+   scaleGridLeif=5,
+   scaleGridRight=10
+);
+
+color: #000000              
+textRollOverColor:#666666          
+textSelectedColor:#333333           
+}
+.footerIconImg {
+    
+    vertical-align:-20%;
+    
+}
+
+.toolbarTableStyle{
+		  background: url("button_bg.png");
+			border:1.5px solid black;
+			border-radius:4px;
+			
+	}
+	.toolbarTextDivStyle {
+    font-size: 9px;
+    display : none;
+	}
+.buttonTd{
+    float:left;
+	border-style:solid;
+	border-width:0 0 0 1;
+	border-color:#555555;
+    padding:0px;
+  	height:40px;
+    margin:0px;
+	}
+.attachmentStyle{
+			position: relative;
+			margin-top: -10px;
+			
+			padding-bottom: 8px;
+			border-width: 15 8 0 8;
+			-webkit-border-image: url("ic_email_thread_open_top_default.9.png") 15 8 8 8;
+			
+			z-index: 10
+		}
+.attachTABLE{
+			width:100%;
+			padding:20;
+			border-width: 15 8 8 8;
+
+				-webkit-border-image: url("attach_table_bg.png") 5 5 5 5  ;
+			/*background: url(attach_table_bg.9.png) top left (100% 2em)	*/		
+		}
+.attachTR{
+background-image:url('attach_table_bg.9.png');
+background-repeat:no-repeat;
+}
+		.attachTable2 {
+			position: absolute;
+			top:0;
+			left:0;
+			
+			
+		}
+button.attachBtn {
+	border:1 solid transparent;
+    padding:0px;
+	position:relative;
+	top:-25;
+    margin:0px;
+    background-color: transparent;
+}

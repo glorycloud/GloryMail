@@ -1,0 +1,8 @@
+<Context path="/MailProxy" reloadable="true" docBase="F:\cloudymail\dliu_workspace\MailProxy" workDir="F:\cloudymail\dliu_workspace\MailProxy\work" swallowOutput="false">
+
+
+  <Resource name="jdbc/TestDB" auth="Container" type="javax.sql.DataSource"
+               maxActive="100" maxIdle="30" maxWait="10000"
+               username="root" password="" driverClassName="com.mysql.jdbc.Driver"
+               url="jdbc:mysql://localhost:3306/test"/>
+</Context>

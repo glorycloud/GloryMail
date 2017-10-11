@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemadesigner version="6.5">
+<source>
+<database charset="latin1" collation="latin1_swedish_ci">test</database>
+</source>
+<canvas zoom="100">
+<tables>
+<table name="dumy1" view="colnames">
+<left>320</left>
+<top>36</top>
+<width>45</width>
+<height>96</height>
+<sql_create_table>CREATE TABLE `dumy1` (
+  `a` char(10) DEFAULT NULL,
+  `b` decimal(6,0) NOT NULL,
+  PRIMARY KEY (`b`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1</sql_create_table>
+</table>
+<table name="message" view="colnames">
+<left>427</left>
+<top>64</top>
+<width>94</width>
+<height>144</height>
+<sql_create_table>CREATE TABLE `message` (
+  `uid` varchar(70) NOT NULL COMMENT 'message id from UIDL',
+  `accountId` decimal(6,0) DEFAULT NULL,
+  `subject` varchar(512) DEFAULT NULL,
+  `date` datetime DEFAULT NULL,
+  `from` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`uid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1</sql_create_table>
+</table>
+<table name="account" view="colnames">
+<left>29</left>
+<top>51</top>
+<width>228</width>
+<height>192</height>
+<sql_create_table>CREATE TABLE `account` (
+  `name` varchar(100) DEFAULT NULL COMMENT 'complete email address',
+  `loginName` varchar(50) DEFAULT NULL COMMENT 'login name of this account',
+  `smtpServer` varchar(100) DEFAULT NULL COMMENT 'domain name or IP of smtp server',
+  `popServer` varchar(100) DEFAULT NULL,
+  `imapServer` varchar(100) DEFAULT NULL,
+  `serverType` enum('smtp','imap') DEFAULT NULL COMMENT '1 for pop3, 2 for imap',
+  `ID` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT 'ID for this account, reference by other tables',
+  `password` varchar(50) DEFAULT NULL COMMENT 'user''s password',
+  PRIMARY KEY (`ID`),
+  UNIQUE KEY `indexByEmallName` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1</sql_create_table>
+</table>
+</tables>
+</canvas>
+</schemadesigner>

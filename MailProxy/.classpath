@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/jasper.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/jsp-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/el-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/annotations-api.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/0javaee.jar" sourcepath="D:/workspace/apach-javamail/src"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-io-2.0.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/geronimo-forgunte-mail.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/geronimo-javamail_1.4_spec.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/iText.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jacob.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jdom.jar" sourcepath="D:/downloads/java/jdom-1.1.1.zip"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/juniversalchardet-1.0.3.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/staxmate-2.0.1.jar" sourcepath="libs/staxmate-src-2.0.1.zip"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-fileupload-1.2.2.jar" sourcepath="D:/downloads/java/commons-fileupload-1.2.2-src.zip"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jericho.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/bcprov-ext-jdk15-145.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jzlib-1.1.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/mysql-connector-java-3.0.10-stable-bin.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/stax2-api-3.1.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/staxmate-src-2.0.1.zip"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/woodstox-core-asl-4.1.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/woodstox-core-lgpl-4.1.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/woodstox-core-src-4.1.2.zip"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/slf4j-api-1.7.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/httpclient-4.2.5.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/httpcore-4.2.4.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/httpmime-4.2.5.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/xpp3-1.1.4c.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-codec-1.8.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jcifs-1.1.11.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GloryPushServer"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/kxml"/>
+	<classpathentry kind="output" path="WEB-INF/classes"/>
+</classpath>
